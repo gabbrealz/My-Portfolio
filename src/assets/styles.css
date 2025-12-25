@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-dark-1: #26292B;
+  --color-dark-2: #2E3239;
+  --color-primary-1: #5F7ADB;
+  --color-primary-2: #A2B2EE;
+}
+
+body {
+  @apply bg-dark-1;
+}
+
+@utility font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
