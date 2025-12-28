@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
 
       <div className="w-full h-full flex justify-center items-center">
-        <div className="pl-6 w-9/10 md:4/5 z-50 flex flex-col justify-center">
+        <div className="pl-6 w-9/10 md:4/5 z-2 flex flex-col justify-center">
           <h1 className="font-nunito font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl text-white">
             Kumusta! I'm <span className="whitespace-nowrap">Christian Agot</span>
           </h1>
