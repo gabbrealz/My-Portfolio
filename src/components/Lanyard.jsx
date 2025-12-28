@@ -24,7 +24,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex justify-center items-center transform scale-100 origin-center">
+    <div className="relative w-full h-[550px] md:h-[800px] lg:h-screen flex justify-center items-center transform scale-100 origin-center">
       <Canvas
         camera={{ position: position, fov: fov }}
         dpr={[1, 2]}

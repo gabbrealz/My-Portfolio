@@ -9,7 +9,7 @@ export default function Header() {
         <a className="font-nunito text-md sm:text-lg md:text-xl whitespace-nowrap">
           Christian Agot
         </a>
-        <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-12">
+        <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-14 xl:gap-x-16">
           <a className="font-nunito">About</a>
           <a className="font-nunito">Skills</a>
           <a className="font-nunito">Projects</a>
