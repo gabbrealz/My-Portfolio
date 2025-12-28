@@ -5,7 +5,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full min-h-12 px-8 py-2 flex justify-between items-center bg-secondary-1 shadow-lg">
+      <header className="z-50 fixed top-0 left-0 w-full min-h-12 px-8 py-2 flex justify-between items-center bg-secondary-1 shadow-lg">
         <a className="font-nunito text-xl">
           gabb.
         </a>
