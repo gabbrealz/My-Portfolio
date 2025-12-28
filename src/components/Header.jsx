@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <>
       <header className="z-50 fixed top-0 left-0 w-full h-14 md:h-16 px-[7.5%] flex justify-between items-center bg-secondary-1 shadow-lg">
-        <a className="font-nunito text-xl">
-          gabb.
+        <a className="font-nunito text-xl whitespace-nowrap">
+          Christian Agot
         </a>
         <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-12">
           <a className="font-nunito">About</a>
