@@ -2,9 +2,6 @@
 @import "tailwindcss";
 
 @layer base {
-  body {
-    overflow-x: clip;
-  }
   * {
     @apply text-white;
   }
