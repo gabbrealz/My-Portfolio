@@ -20,7 +20,7 @@ export default function Header() {
           {show ? "✕" : "☰"}
         </button>
       </header>
-      <div className="z-50 fixed top-20 w-1/2 sm:w-1/3">
+      <div className="md:hidden z-50 fixed top-20 w-1/2 sm:w-1/3">
         <nav className="flex flex-col gap-3">
           <a className={`py-1 text-center font-nunito bg-secondary-1 transform ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350}`}>About</a>
           <a className={`py-1 text-center font-nunito bg-secondary-1 transform ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350} delay-50`}>Skills</a>
