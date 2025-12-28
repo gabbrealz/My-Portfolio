@@ -27,7 +27,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
     <div className="relative z-0 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
       <Canvas
         camera={{ position: position, fov: fov }}
-        dpr={[1, isMobile ? 1.5 : 2]}
+        dpr={[1, 2]}
         gl={{ alpha: transparent }}
         onCreated={({ gl }) => gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)}
       >
@@ -186,7 +186,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
           useMap
           map={texture}
           repeat={[-4, 1]}
-          lineWidth={1}
+          lineWidth={0.75}
         />
       </mesh>
     </>
