@@ -20,75 +20,89 @@ import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-8 pt-16">
+    <section id="skills" className="px-8 pt-32 flex flex-col justify-center items-center">
       <h1 className="mb-12 md:mb-16 font-nunito font-bold text-center text-3xl md:text-4xl lg:text-5xl">
-        Skills
+        Some technologies I've worked with
       </h1>
-      <div className="flex gap-2">
-        <div className="grid grid-cols-3 gap-2">
+      <div className="flex flex-wrap justify-around grow gap-4 md:gap-5 lg:gap-6 lg:w-[90%] xl:w-[75%]">
+        <div className="relative px-2 md:px-4 py-6 grid grid-cols-3 place-content-around gap-1 grow border rounded-lg">
+          <span className="px-2 md:px-4 absolute top-0 left-0 -translate-y-1/2 translate-x-4 bg-secondary-2 font-nunito font-bold text-sm md:text-md lg:text-lg xl:text-xl">
+            Languages
+          </span>
           <SkillCard>
-            <img src={htmlIcon} alt="HTML Icon" className=""/>
-            <>HTML 5</>
+            <img src={htmlIcon} alt="HTML Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+            <>HTML</>
           </SkillCard>
           <SkillCard>
-            <img src={cssIcon} alt="CSS Icon" className=""/>
+            <img src={cssIcon} alt="CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
             <>CSS</>
           </SkillCard>
           <SkillCard>
-            <img src={jsIcon} alt="JS Icon" className=""/>
+            <img src={jsIcon} alt="JS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
             <>JavaScript</>
           </SkillCard>
           <SkillCard>
-            <img src={pythonIcon} alt="Python Icon" className=""/>
+            <img src={pythonIcon} alt="Python Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
             <>Python</>
           </SkillCard>
           <SkillCard>
-            <img src={javaIcon} alt="Java Icon" className=""/>
+            <img src={javaIcon} alt="Java Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
             <>Java</>
           </SkillCard>
           <SkillCard>
-            <img src={cppIcon} alt="C++ Icon" className=""/>
+            <img src={cppIcon} alt="C++ Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
             <>C++</>
           </SkillCard>
         </div>
-        <div className="grid grid-cols-2 gap-2">
-          <SkillCard>
-            <img src={reactIcon} alt="React Icon" className=""/>
-            <>React</>
-          </SkillCard>
-          <SkillCard>
-            <img src={tailwindIcon} alt="Tailwind CSS Icon" className=""/>
-            <>Tailwind CSS</>
-          </SkillCard>
-          <SkillCard>
-            <img src={bootstrapIcon} alt="Bootstrap Icon" className=""/>
-            <>Bootstrap</>
-          </SkillCard>
-          <SkillCard>
-            <img src={springIcon} alt="Spring Icon" className=""/>
-            <>Spring</>
-          </SkillCard>
-        </div>
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-2">
+        <div className="h-fit flex flex-wrap grow gap-4 sm:gap-5 md:gap-6">
+          <div className="relative px-2 md:px-4 py-6 grid grid-cols-2 place-content-around gap-1 grow border rounded-lg">
+            <span className="px-2 md:px-4 absolute top-0 left-0 -translate-y-1/2 translate-x-4 bg-secondary-2 font-nunito font-bold text-sm md:text-md lg:text-lg xl:text-xl">
+              Frameworks
+            </span>
             <SkillCard>
-              <img src={postgresIcon} alt="Postgres Icon" className=""/>
-              <>Postgres</>
+              <img src={reactIcon} alt="React Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <>React</>
             </SkillCard>
             <SkillCard>
-              <img src={mysqlIcon} alt="MySQL Icon" className=""/>
-              <>MySQL</>
+              <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <>Tailwind</>
+            </SkillCard>
+            <SkillCard>
+              <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <>Bootstrap</>
+            </SkillCard>
+            <SkillCard>
+              <img src={springIcon} alt="Spring Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <>Spring</>
             </SkillCard>
           </div>
-          <div className="grid grid-cols-2">
-            <SkillCard>
-              <img src={gitIcon} alt="Git Icon" className=""/>
-              <>Git</>
-            </SkillCard>
-            <SkillCard>
-              <img src={dockerIcon} alt="Docker Icon" className=""/>
-              <>Docker</>
-            </SkillCard>
+          <div className="flex flex-col grow gap-4 sm:gap-5 md:gap-6">
+            <div className="relative px-2 md:px-4 py-6 grid grid-cols-2 place-content-around gap-1 grow border rounded-lg">
+              <span className="px-2 md:px-4 absolute top-0 left-0 -translate-y-1/2 translate-x-4 bg-secondary-2 font-nunito font-bold text-sm md:text-md lg:text-lg xl:text-xl">
+                Databases
+              </span>
+              <SkillCard>
+                <img src={postgresIcon} alt="Postgres Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <>Postgres</>
+              </SkillCard>
+              <SkillCard>
+                <img src={mysqlIcon} alt="MySQL Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <>MySQL</>
+              </SkillCard>
+            </div>
+            <div className="relative px-2 md:px-4 py-6 grid grid-cols-2 place-content-around gap-1 grow border rounded-lg">
+              <span className="px-2 md:px-4 absolute top-0 left-0 -translate-y-1/2 translate-x-4 bg-secondary-2 font-nunito font-bold text-sm md:text-md lg:text-lg xl:text-xl">
+                Tools
+              </span>
+              <SkillCard>
+                <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <>Git</>
+              </SkillCard>
+              <SkillCard>
+                <img src={dockerIcon} alt="Docker Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <>Docker</>
+              </SkillCard>
+            </div>
           </div>
         </div>
       </div>
