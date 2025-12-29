@@ -10,7 +10,7 @@ export default function About() {
     ">
       <div className="mx-auto [grid-area:content]">
         <h1 className="mb-8 font-nunito font-bold text-center text-3xl sm:mb-10 sm:text-left md:text-4xl lg:text-5xl">
-          A Little About Me
+          About Me
         </h1>
         <div className="flex flex-col gap-6">
           <p className="font-nunito text-sm md:text-md lg:text-lg leading-[1.5]">

@@ -92,7 +92,7 @@ export default function Skills() {
               </>
             </SkillsContainer>
             <SkillsContainer>
-              <>Tool</>
+              <>Tools</>
               <>
                 <SkillCard>
                   <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
