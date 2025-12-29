@@ -9,7 +9,7 @@ export default function About() {
       xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
-        <h1 className="mb-4 sm:mb-6 font-nunito text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="mb-4 sm:mb-6 font-nunito font-bold text-3xl md:text-4xl lg:text-5xl">
           About Me
         </h1>
         <div className="flex flex-col gap-6">
@@ -33,7 +33,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex justify-center items-center [grid-area:image] h-full">
-        <img src={profileImg} alt="" className="aspect-video object-cover shadow-lg shadow-black sm:aspect-auto sm:h-full"/>
+        <img src={profileImg} alt="" className="aspect-video object-cover rounded-md lg:rounded-lg shadow-lg shadow-black sm:aspect-auto sm:h-full"/>
       </div>
     </section>
   );
