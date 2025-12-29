@@ -3,18 +3,18 @@ import profileImg from '../assets/images/profile/read.jpg';
 export default function About() {
   return (
     <section id="about" className="
-      px-8 pt-8 flex flex-col gap-8
+      px-8 pt-32 flex flex-col gap-8
       sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
       lg:gap-16
       xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
-        <h1 className="mb-4 sm:mb-6 font-nunito font-bold text-3xl md:text-4xl lg:text-5xl">
-          About Me
+        <h1 className="mb-8 font-nunito font-bold text-center text-3xl sm:mb-10 sm:text-left md:text-4xl lg:text-5xl">
+          A Little About Me
         </h1>
         <div className="flex flex-col gap-6">
           <p className="font-nunito text-sm md:text-md lg:text-lg leading-[1.5]">
-            Hello! My name is Christian, and I’m a 2nd-year CS student at Asia Pacific College.
+            Hello! My name is Christian, and I’m a CS sophomore student at Asia Pacific College.
             I’m an aspiring software engineer with a passion for learning and building projects that help me grow.
           </p>
           <p className="font-nunito text-sm md:text-md lg:text-lg leading-[1.5]">
@@ -22,7 +22,7 @@ export default function About() {
             From those times, even building simple projects ignited my curiosity and love for coding!
           </p>
           <p className="font-nunito text-sm md:text-md lg:text-lg leading-[1.5]">
-            In the past, I've developed web app back-ends and standalone Python applications
+            Since then, I've developed web app back-ends and standalone Python applications
             that strengthened my algorithmic thinking. Now, I'm exploring frontend frameworks
             like React, Bootstrap, and Tailwind CSS.
           </p>
