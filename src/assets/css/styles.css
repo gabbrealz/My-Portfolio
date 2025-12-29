@@ -2,6 +2,9 @@
 @import "tailwindcss";
 
 @layer base {
+  body {
+    overflow-x: hidden;
+  }
   * {
     @apply text-white;
   }
