@@ -5,7 +5,7 @@ import Skills from './sections/Skills.jsx';
 import Projects from './sections/Projects.jsx';
 import Journey from './sections/Journey.jsx';
 import Contact from './sections/Contact.jsx';
-import Footer from './components/Footer.jsx';
+import Footer from './sections/Footer.jsx';
 
 export default function App() {
   return (
@@ -17,6 +17,9 @@ export default function App() {
       <Projects/>
       <Journey/>
       <Contact/>
+
+      <div className="h-screen"></div>
+
       <Footer/>
     </>
   );
