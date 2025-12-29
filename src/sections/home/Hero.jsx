@@ -5,7 +5,7 @@ import InstagramIcon from "../../assets/svg/instagram.svg?react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-screen h-screen">
+    <section id="hero" className="w-screen h-screen overflow-hidden">
       <div className="z-1 absolute w-full h-fit overflow-hidden -translate-y-20">
         <div className="h-fit lg:w-[140vw] lg:scale-110">
           <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
@@ -31,7 +31,7 @@ export default function Hero() {
             </span>
           </h1>
           <span className="
-            mt-3 font-nunito text-lg text-center leading-[1.3]
+            mt-2 font-nunito text-lg text-center leading-[1.3]
             sm:text-xl
             lg:mt-4 lg:text-3xl lg:text-left lg:leading-[1.5]
           ">
@@ -44,28 +44,25 @@ export default function Hero() {
             lg:mt-12 lg:justify-start lg:gap-5
           ">
             <a className="
-              z-10 p-2.5 border border-white rounded-lg
-              sm:rounded-xl
+              z-10 p-2.5 border border-white rounded-xl
               md:p-3
               md:border-2
             ">
-              <GitHubIcon className="w-5 h-5 fill-white" />
+              <GitHubIcon className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />
             </a>
             <a className="
-              z-10 p-2.5 border border-white rounded-lg
-              sm:rounded-xl
+              z-10 p-2.5 border border-white rounded-xl
               md:p-3
               md:border-2
             ">
-              <LinkedInIcon className="w-5 h-5 fill-white" />
+              <LinkedInIcon className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />
             </a>
             <a className="
-              z-10 p-2.5 border border-white rounded-lg
-              sm:rounded-xl
+              z-10 p-2.5 border border-white rounded-xl
               md:p-3
               md:border-2
             ">
-              <InstagramIcon className="w-5 h-5 fill-white" />
+              <InstagramIcon className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />
             </a>
           </div>
         </div>
