@@ -45,6 +45,7 @@ export default function Hero() {
             w-full mt-8 flex justify-center items-center gap-3
             md:mt-10 md:gap-4
             lg:mt-12 lg:justify-start lg:gap-5
+            xl:mt-14 xl:gap-6
           ">
             <a className="
               z-10 p-2.5 border rounded-xl
