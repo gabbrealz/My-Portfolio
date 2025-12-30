@@ -15,7 +15,7 @@ export default function About() {
           sm:mb-6 sm:gap-8
         ">
           <h2 className="whitespace-nowrap">ABOUT ME</h2>
-          <span className="w-1/2 h-0.5 bg-highlight-1"></span>
+          <span className="w-3/5 h-0.5 bg-highlight-1"></span>
         </div>
         <div className="flex flex-col gap-6">
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
@@ -24,7 +24,7 @@ export default function About() {
             <span className="text-highlight-2">a passion for learning and building projects that help me grow.</span>
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
-            I began my tech journey the summer before college, motivated to learn Python.
+            I began my tech journey the summer before college, when I was motivated to learn Python.
             From those times, even building simple projects ignited my curiosity and love for coding!
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
@@ -32,15 +32,15 @@ export default function About() {
             <span className="text-highlight-2">
               I've developed web app back-ends and standalone Python applications {" "}
             </span>
-            that strengthened my algorithmic thinking, and {" "}
-            <span className="text-highlight-2">
-              led projects that earned the respect of my peers. {" "}
-            </span>
-            Now, I'm exploring frontend frameworks
-            like React, Bootstrap, and Tailwind CSS.
+            that strengthened my algorithmic thinking.
+            Now, I'm exploring frontend frameworks like React, Bootstrap, and Tailwind CSS.
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
-            When I’m not building projects, you’ll find me learning new technologies, watching Netflix,
+            When I’m not building projects, {" "}
+            <span className="text-highlight-2">
+              you’ll find me learning new technologies, {" "}
+            </span>
+            watching Netflix,
             reading manga, or gaming.
           </p>
         </div>

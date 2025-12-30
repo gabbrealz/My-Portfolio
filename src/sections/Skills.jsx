@@ -36,9 +36,7 @@ export default function Skills() {
         xl:mb-16
       ">
         <span className="hidden w-full h-0.5 bg-highlight-1 sm:inline"></span>
-        <h2>
-          SKILLS
-        </h2>
+        <h2>SKILLS</h2>
         <span className="w-full h-0.5 bg-highlight-1"></span>
       </div>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
