@@ -18,7 +18,6 @@ export default function SkillsContainer({ gridColumns = 2, children }) {
         px-2 py-0.25 absolute top-0 left-0 -translate-y-1/2 translate-x-4 font-body text-xs text-highlight-2 bg-neutral-2 border-2 border-neutral-1 rounded-md
         md:text-sm md:px-3
         lg:text-md
-        xl:text-lg
       ">
         {title}
       </span>
