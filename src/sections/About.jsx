@@ -3,14 +3,15 @@ import profileImg from '../assets/images/profile/read.jpg';
 export default function About() {
   return (
     <section id="about" className="
-      px-8 pt-32 flex flex-col gap-8
-      sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
-      lg:gap-16
-      xl:gap-20 xl:grid-cols-[20%_40%]
+      pt-16 px-8 flex flex-col gap-8
+      sm:pt-20 sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
+      md:pt-24
+      lg:pt-28 lg:gap-16
+      xl:pt-32 xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
-        <h1 className="mb-8 font-nunito font-bold text-center text-3xl sm:mb-10 sm:text-left md:text-4xl lg:text-5xl">
-          About Me
+        <h1 className="mb-4 font-nunito font-bold text-2xl sm:mb-6 md:text-3xl">
+          ABOUT ME
         </h1>
         <div className="flex flex-col gap-6">
           <p className="font-nunito text-sm md:text-md lg:text-lg leading-[1.5]">
