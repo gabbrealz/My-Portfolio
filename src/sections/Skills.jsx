@@ -29,7 +29,7 @@ export default function Skills() {
       xl:pt-32
     ">
       <h1 className="
-        mb-8 font-nunito font-bold text-center text-2xl
+        mb-8 font-heading text-center text-2xl
         sm:mb-10 sm:text-left
         md:mb-12 md:text-3xl
         lg:mb-14 lg:text-4xl

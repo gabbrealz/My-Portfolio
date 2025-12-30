@@ -19,19 +19,19 @@ export default function Hero() {
           xl:pl-32
         ">
           <h1 className="
-            z-10 font-nunito font-bold text-3xl text-white text-center leading-[1.3]
+            z-10 font-heading text-3xl text-white text-center leading-[1.3]
             sm:text-4xl
             md:text-5xl
             lg:text-left
             xl:text-6xl
           ">
-            Hey there! I'm <br/>
+            Hey There! I'm <br/>
             <span>
               Christian Agot
             </span>
           </h1>
           <span className="
-            z-10 mt-4 font-nunito text-xl text-center leading-[1.3]
+            z-10 mt-4 font-body text-xl text-center leading-[1.3]
             sm:text-2xl
             lg:text-left lg:leading-[1.5]
             xl:text-3xl
