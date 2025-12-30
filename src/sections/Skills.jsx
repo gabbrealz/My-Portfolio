@@ -74,7 +74,7 @@ export default function Skills() {
             <>FRAMEWORKS</>
             <>
               <SkillCard>
-                <img src={reactIcon} alt="React Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <img src={reactIcon} alt="React Icon" className="rotate-30 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>React</>
               </SkillCard>
               <SkillCard>
