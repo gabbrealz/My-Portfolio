@@ -3,11 +3,11 @@ import profileImg from '../assets/images/profile/read.jpg';
 export default function About() {
   return (
     <section id="about" className="
-      pt-16 px-8 flex flex-col gap-8
-      sm:pt-20 sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
-      md:pt-24
-      lg:pt-28 lg:gap-16
-      xl:pt-32 xl:gap-20 xl:grid-cols-[20%_40%]
+      mt-16 px-8 flex flex-col gap-8
+      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
+      md:mt-24
+      lg:mt-28 lg:gap-16
+      xl:mt-32 xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
         <div className="
@@ -15,7 +15,7 @@ export default function About() {
           sm:mb-6 sm:gap-8
         ">
           <h2 className="whitespace-nowrap">ABOUT ME</h2>
-          <span className="w-3/5 h-0.5 bg-highlight-1"></span>
+          <span className="w-3/5 h-0.25 bg-highlight-1"></span>
         </div>
         <div className="flex flex-col gap-6">
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">

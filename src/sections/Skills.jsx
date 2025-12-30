@@ -22,11 +22,11 @@ import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 export default function Skills() {
   return (
     <section id="skills" className="
-      pt-16 mx-auto px-8 flex flex-col justify-center items-center
-      sm:pt-20
-      md:pt-24 md:w-[85%] md:px-0
-      lg:pt-28 lg:w-[80%]
-      xl:pt-32 xl:w-[70%]
+      mt-24 mx-auto px-8 flex flex-col justify-center items-center
+      sm:mt-30
+      md:mt-36 md:w-[85%] md:px-0
+      lg:mt-42 lg:w-[80%]
+      xl:mt-48 xl:w-[70%]
     ">
       <div className="
         w-full mb-8 flex justify-center items-center gap-4
@@ -35,9 +35,9 @@ export default function Skills() {
         lg:mb-14
         xl:mb-16
       ">
-        <span className="hidden w-full h-0.5 bg-highlight-1 sm:inline"></span>
+        <span className="hidden w-full h-0.25 bg-highlight-1 sm:inline"></span>
         <h2>SKILLS</h2>
-        <span className="w-full h-0.5 bg-highlight-1"></span>
+        <span className="w-full h-0.25 bg-highlight-1"></span>
       </div>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
         <SkillsContainer gridColumns={3}>
