@@ -3,11 +3,11 @@
 
 @theme {
   --color-primary-1: #10182a;
-  --color-secondary-1: #000810;
+  --color-secondary-1: #000a12;
   --color-secondary-2: #00080c;
 
-  --color-neutral-1: #2a2a2e;
-  --color-neutral-2: #101016;
+  --color-neutral-1: #28282d;
+  --color-neutral-2: #121219;
 
   --color-highlight-1: #9f9e84;
   --color-highlight-2: #fffacb;
@@ -17,12 +17,13 @@
 }
 
 @layer base {
-  * { @apply text-white fill-white; }
+  * { @apply text-white; }
   body {
-    background: linear-gradient(to bottom right, var(--color-primary-1), var(--color-secondary-1), var(--color-secondary-2));
+    background: url('svg/body-bg.svg') no-repeat center center;
+    background-size: cover;
     overflow-x: hidden;
   }
-  header { @apply bg-linear-to-r from-secondary-1/50 to-secondary-2/60 backdrop-blur-md; }
-  h1, h2 { @apply text-highlight-1 tracking-wider; }
+  header { @apply bg-linear-to-r from-neutral-1/50 to-secondary-1/60 backdrop-blur-md; }
+  h1, h2 { @apply text-highlight-1 text-shadow-lg text-shadow-black tracking-wider; }
   h2 { @apply font-heading text-xl md:text-2xl lg:text-3xl; }
 }

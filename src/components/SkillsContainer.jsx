@@ -10,7 +10,7 @@ export default function SkillsContainer({ gridColumns = 2, children }) {
 
   return (
     <div className={`
-      relative px-2 py-6 bg-neutral-2 grid ${gridColsMap[gridColumns]} place-content-around gap-1 grow border-2 border-neutral-1 rounded-lg
+      relative px-2 py-6 bg-neutral-2/60 backdrop-blur-xs grid ${gridColsMap[gridColumns]} place-content-around gap-1 grow border-2 border-neutral-1 rounded-lg
       sm:gap-1.5
       md:px-4 md:gap-2
     `}>

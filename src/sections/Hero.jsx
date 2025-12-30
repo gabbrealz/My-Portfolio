@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
           </h1>
           <span className="
-            z-10 mt-6 font-body text-lg text-center leading-[1.3]
+            z-10 mt-6 font-body text-lg text-center leading-[1.3] text-shadow-md text-shadow-black
             sm:text-xl md:text-2xl
             lg:text-left lg:leading-[1.5]
             xl:text-3xl

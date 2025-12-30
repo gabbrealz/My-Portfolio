@@ -35,9 +35,9 @@ export default function Skills() {
         lg:mb-14
         xl:mb-16
       ">
-        <span className="hidden w-full h-0.25 bg-neutral-1 sm:inline"></span>
+        <span className="hidden w-full h-0.25 bg-highlight-1 sm:inline"></span>
         <h2>SKILLS</h2>
-        <span className="w-full h-0.25 bg-neutral-1"></span>
+        <span className="w-full h-0.25 bg-highlight-1"></span>
       </div>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
         <SkillsContainer gridColumns={3}>
