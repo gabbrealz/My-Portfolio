@@ -15,7 +15,7 @@ export default function Projects() {
         xl:mb-16
       ">
         <h2>PROJECTS</h2>
-        <span className="w-full h-0.25 bg-highlight-1"></span>
+        <span className="w-full h-0.25 bg-neutral-1"></span>
       </div>
       <div className="flex flex-col gap-2">
 

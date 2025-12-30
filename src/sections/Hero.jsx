@@ -19,10 +19,10 @@ export default function Hero() {
           xl:pl-32
         ">
           <h1 className="z-10 font-heading text-center leading-[1.3] lg:text-left">
-            <span className="inline-block mb-1 text-highlight-2 text-sm sm:text-md md:text-lg md:mb-2 lg:text-xl">
+            <span className="inline-block mb-1 text-highlight-1 text-sm sm:text-md md:text-lg md:mb-2 lg:text-xl">
               HEY THERE, I'M
             </span><br/>
-            <span className="text-highlight-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
+            <span className="text-highlight-2 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
               CHRISTIAN AGOT
             </span>
           </h1>
@@ -47,11 +47,7 @@ export default function Hero() {
             lg:mt-12 lg:justify-start lg:gap-5
             xl:mt-14 xl:gap-6
           ">
-            <a className="
-              z-10 p-2.5 border rounded-xl
-              md:p-3
-              md:border-2
-            ">
+            <a className="z-10 p-2.5 border rounded-xl md:p-3 md:border-2">
               <GitHubIcon className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a className="z-10 p-2.5 border rounded-xl md:p-3 md:border-2">

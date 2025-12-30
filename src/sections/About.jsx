@@ -10,12 +10,9 @@ export default function About() {
       xl:mt-32 xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
-        <div className="
-          mb-4 flex items-center gap-4
-          sm:mb-6 sm:gap-8
-        ">
+        <div className="mb-4 flex items-center gap-4 sm:mb-6 sm:gap-8">
           <h2 className="whitespace-nowrap">ABOUT ME</h2>
-          <span className="w-3/5 h-0.25 bg-highlight-1"></span>
+          <span className="w-3/5 h-0.25 bg-neutral-1"></span>
         </div>
         <div className="flex flex-col gap-6">
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
