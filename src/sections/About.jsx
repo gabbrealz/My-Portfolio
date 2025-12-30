@@ -10,21 +10,29 @@ export default function About() {
       xl:pt-32 xl:gap-20 xl:grid-cols-[20%_40%]
     ">
       <div className="mx-auto [grid-area:content]">
-        <h1 className="mb-4 font-heading text-2xl sm:mb-6 md:text-3xl lg:text-4xl">
+        <h2 className="mb-4 sm:mb-6">
           ABOUT ME
-        </h1>
+        </h2>
         <div className="flex flex-col gap-6">
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
             Hello! My name is Christian, and I’m a CS sophomore student at Asia Pacific College.
-            I’m an aspiring software engineer with a passion for learning and building projects that help me grow.
+            I’m an aspiring software engineer with {" "}
+            <span className="text-highlight-2">a passion for learning and building projects that help me grow.</span>
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
             I began my tech journey the summer before college, motivated to learn Python.
             From those times, even building simple projects ignited my curiosity and love for coding!
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
-            Since then, I've developed web app back-ends and standalone Python applications
-            that strengthened my algorithmic thinking. Now, I'm exploring frontend frameworks
+            Since then, {" "}
+            <span className="text-highlight-2">
+              I've developed web app back-ends and standalone Python applications {" "}
+            </span>
+            that strengthened my algorithmic thinking, and {" "}
+            <span className="text-highlight-2">
+              led projects that earned the respect of my peers. {" "}
+            </span>
+            Now, I'm exploring frontend frameworks
             like React, Bootstrap, and Tailwind CSS.
           </p>
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">

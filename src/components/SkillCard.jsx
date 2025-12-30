@@ -19,7 +19,7 @@ export default function SkillCard({ children }) {
         {techIcon}
       </div>
       <div className="
-        text-xs font-body text-center pt-0.75 pb-0.25 border-t
+        text-xs font-body text-center pt-0.75 pb-0.25 border-t-3 border-neutral-1
         sm:text-sm
         md:text-md
       ">

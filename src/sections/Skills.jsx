@@ -28,90 +28,84 @@ export default function Skills() {
       lg:pt-28
       xl:pt-32
     ">
-      <h1 className="
-        mb-8 font-heading text-center text-2xl
-        sm:mb-10 sm:text-left
-        md:mb-12 md:text-3xl
-        lg:mb-14 lg:text-4xl
-        xl:mb-16
-      ">
+      <h2 className="mb-8 text-center sm:text-left sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
         SKILLS
-      </h1>
+      </h2>
       <div className="flex flex-wrap justify-around grow gap-4 lg:gap-6 lg:w-[90%] xl:w-[75%]">
         <SkillsContainer gridColumns={3}>
-          <>Languages</>
+          <>LANGUAGES</>
           <>
             <SkillCard>
-              <img src={htmlIcon} alt="HTML Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={htmlIcon} alt="HTML Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>HTML</>
             </SkillCard>
             <SkillCard>
-              <img src={cssIcon} alt="CSS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={cssIcon} alt="CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>CSS</>
             </SkillCard>
             <SkillCard>
-              <img src={jsIcon} alt="JS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={jsIcon} alt="JS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>JavaScript</>
             </SkillCard>
             <SkillCard>
-              <img src={pythonIcon} alt="Python Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={pythonIcon} alt="Python Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>Python</>
             </SkillCard>
             <SkillCard>
-              <img src={javaIcon} alt="Java Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={javaIcon} alt="Java Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>Java</>
             </SkillCard>
             <SkillCard>
-              <img src={cppIcon} alt="C++ Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+              <img src={cppIcon} alt="C++ Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>C++</>
             </SkillCard>
           </>
         </SkillsContainer>
         <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
           <SkillsContainer>
-            <>Frameworks</>
+            <>FRAMEWORKS</>
             <>
               <SkillCard>
-                <img src={reactIcon} alt="React Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                <img src={reactIcon} alt="React Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>React</>
               </SkillCard>
               <SkillCard>
-                <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Tailwind</>
               </SkillCard>
               <SkillCard>
-                <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Bootstrap</>
               </SkillCard>
               <SkillCard>
-                <img src={springIcon} alt="Spring Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                <img src={springIcon} alt="Spring Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Spring</>
               </SkillCard>
             </>
           </SkillsContainer>
           <div className="flex flex-col grow gap-4 lg:gap-6">
             <SkillsContainer>
-              <>Databases</>
+              <>DATABASES</>
               <>
                 <SkillCard>
-                  <img src={postgresIcon} alt="Postgres Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                  <img src={postgresIcon} alt="Postgres Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Postgres</>
                 </SkillCard>
                 <SkillCard>
-                  <img src={mysqlIcon} alt="MySQL Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                  <img src={mysqlIcon} alt="MySQL Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>MySQL</>
                 </SkillCard>
               </>
             </SkillsContainer>
             <SkillsContainer>
-              <>Tools</>
+              <>TOOLS</>
               <>
                 <SkillCard>
-                  <img src={gitIcon} alt="Git Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                  <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Git</>
                 </SkillCard>
                 <SkillCard>
-                  <img src={dockerIcon} alt="Docker Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
+                  <img src={dockerIcon} alt="Docker Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Docker</>
                 </SkillCard>
               </>

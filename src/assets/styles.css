@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lexend:wght@100..900&display=swap');
 @import "tailwindcss";
 
-@layer base {
-  body {
-    overflow-x: hidden;
-  }
-  * {
-    @apply text-white;
-  }
-}
-
 @theme {
-  --color-primary-1: #5F7ADB;
-  --color-primary-2: #A2B2EE;
-  --color-secondary-1: #26292B;
-  --color-secondary-2: #212525;
-  --color-secondary-3: #2E3239;
+  --color-primary-1: #10182a;
+  --color-secondary-1: #000810;
+  --color-secondary-2: #00080c;
+
+  --color-neutral-1: #2a2a2e;
+  --color-neutral-2: #101016;
+
+  --color-highlight-1: #9f9e84;
+  --color-highlight-2: #fffacb;
 
   --font-heading: "Lexend", sans-serif;
   --font-body: "Gowun Dodum", sans-serif;
 }
 
-body {
-  @apply bg-secondary-2;
+@layer base {
+  * { @apply text-white fill-white; }
+  body {
+    background: linear-gradient(to bottom right, var(--color-primary-1), var(--color-secondary-1), var(--color-secondary-2));
+    overflow-x: hidden;
+  }
+  header { @apply bg-linear-to-r from-secondary-1/50 to-secondary-2/60 backdrop-blur-md; }
+  h1, h2 { @apply text-highlight-1; }
+  h2 { @apply font-heading tracking-wider text-2xl md:text-3xl lg:text-4xl; }
 }
