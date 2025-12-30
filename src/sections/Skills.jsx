@@ -21,72 +21,84 @@ import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-8 pt-32 flex flex-col justify-center items-center">
-      <h1 className="mb-12 md:mb-16 font-nunito font-bold text-center text-3xl md:text-4xl lg:text-5xl">
-        Some technologies I've worked with
+    <section id="skills" className="
+      pt-16 px-8 flex flex-col justify-center items-center
+      sm:pt-20
+      md:pt-24
+      lg:pt-28
+      xl:pt-32
+    ">
+      <h1 className="
+        mb-8 font-nunito font-bold text-center text-2xl
+        sm:mb-10 sm:text-left
+        md:mb-12 md:text-3xl
+        lg:mb-14 lg:text-4xl
+        xl:mb-16
+      ">
+        SKILLS
       </h1>
-      <div className="flex flex-wrap justify-around grow gap-4 md:gap-5 lg:gap-6 lg:w-[90%] xl:w-[75%]">
+      <div className="flex flex-wrap justify-around grow gap-4 lg:gap-6 lg:w-[90%] xl:w-[75%]">
         <SkillsContainer gridColumns={3}>
           <>Languages</>
           <>
             <SkillCard>
-              <img src={htmlIcon} alt="HTML Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={htmlIcon} alt="HTML Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>HTML</>
             </SkillCard>
             <SkillCard>
-              <img src={cssIcon} alt="CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={cssIcon} alt="CSS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>CSS</>
             </SkillCard>
             <SkillCard>
-              <img src={jsIcon} alt="JS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={jsIcon} alt="JS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>JavaScript</>
             </SkillCard>
             <SkillCard>
-              <img src={pythonIcon} alt="Python Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={pythonIcon} alt="Python Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>Python</>
             </SkillCard>
             <SkillCard>
-              <img src={javaIcon} alt="Java Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={javaIcon} alt="Java Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>Java</>
             </SkillCard>
             <SkillCard>
-              <img src={cppIcon} alt="C++ Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+              <img src={cppIcon} alt="C++ Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
               <>C++</>
             </SkillCard>
           </>
         </SkillsContainer>
-        <div className="h-fit flex flex-wrap grow gap-4 sm:gap-5 md:gap-6">
+        <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
           <SkillsContainer>
             <>Frameworks</>
             <>
               <SkillCard>
-                <img src={reactIcon} alt="React Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <img src={reactIcon} alt="React Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                 <>React</>
               </SkillCard>
               <SkillCard>
-                <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                 <>Tailwind</>
               </SkillCard>
               <SkillCard>
-                <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                 <>Bootstrap</>
               </SkillCard>
               <SkillCard>
-                <img src={springIcon} alt="Spring Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                <img src={springIcon} alt="Spring Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                 <>Spring</>
               </SkillCard>
             </>
           </SkillsContainer>
-          <div className="flex flex-col grow gap-4 sm:gap-5 md:gap-6">
+          <div className="flex flex-col grow gap-4 lg:gap-6">
             <SkillsContainer>
               <>Databases</>
               <>
                 <SkillCard>
-                  <img src={postgresIcon} alt="Postgres Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                  <img src={postgresIcon} alt="Postgres Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                   <>Postgres</>
                 </SkillCard>
                 <SkillCard>
-                  <img src={mysqlIcon} alt="MySQL Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                  <img src={mysqlIcon} alt="MySQL Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                   <>MySQL</>
                 </SkillCard>
               </>
@@ -95,11 +107,11 @@ export default function Skills() {
               <>Tools</>
               <>
                 <SkillCard>
-                  <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                  <img src={gitIcon} alt="Git Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                   <>Git</>
                 </SkillCard>
                 <SkillCard>
-                  <img src={dockerIcon} alt="Docker Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+                  <img src={dockerIcon} alt="Docker Icon" className="size-7 sm:size-8 md:size-9 lg:size-10 xl:size-11"/>
                   <>Docker</>
                 </SkillCard>
               </>
