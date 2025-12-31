@@ -43,84 +43,69 @@ export default function Skills() {
         <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
           <>LANGUAGES</>
           <>
-            <Skill>
-              <img src={htmlIcon} alt="HTML Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>HTML</>
-            </Skill>
-            <Skill>
-              <img src={cssIcon} alt="CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>CSS</>
-            </Skill>
-            <Skill>
-              <img src={jsIcon} alt="JS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>JavaScript</>
-            </Skill>
-            <Skill>
-              <img src={pythonIcon} alt="Python Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>Python</>
-            </Skill>
-            <Skill>
-              <img src={javaIcon} alt="Java Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>Java</>
-            </Skill>
-            <Skill>
-              <img src={cppIcon} alt="C++ Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-              <>C++</>
-            </Skill>
+            <Skill iconSrc={htmlIcon} title="HTML"/>
+            <Skill iconSrc={cssIcon} title="CSS"/>
+            <Skill iconSrc={jsIcon} title="JavaScript"/>
+            <Skill iconSrc={pythonIcon} title="Python"/>
+            <Skill iconSrc={javaIcon} title="Java"/>
+            <Skill iconSrc={cppIcon} title="C++"/>
           </>
         </BorderTitleContainer>
         <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
           <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
             <>FRAMEWORKS</>
             <>
-              <Skill>
-                <img src={reactIcon} alt="React Icon" className="rotate-30 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                <>React</>
-              </Skill>
-              <Skill>
-                <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                <>Tailwind</>
-              </Skill>
-              <Skill>
-                <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                <>Bootstrap</>
-              </Skill>
-              <Skill>
-                <img src={springIcon} alt="Spring Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                <>Spring</>
-              </Skill>
+              <Skill iconSrc={reactIcon} title="React"/>
+              <Skill iconSrc={tailwindIcon} title="Tailwind"/>
+              <Skill iconSrc={bootstrapIcon} title="Bootstrap"/>
+              <Skill iconSrc={springIcon} title="Spring"/>
             </>
           </BorderTitleContainer>
           <div className="flex flex-col grow gap-4 lg:gap-6">
             <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
               <>DATABASES</>
               <>
-                <Skill>
-                  <img src={postgresIcon} alt="Postgres Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                  <>Postgres</>
-                </Skill>
-                <Skill>
-                  <img src={mysqlIcon} alt="MySQL Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                  <>MySQL</>
-                </Skill>
+                <Skill iconSrc={postgresIcon} title="PostgreSQL"/>
+                <Skill iconSrc={mysqlIcon} title="MySQL"/>
               </>
             </BorderTitleContainer>
             <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
-              <>TOOLS</>
+              <>DEVOPS</>
               <>
-                <Skill>
-                  <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                  <>Git</>
-                </Skill>
-                <Skill>
-                  <img src={dockerIcon} alt="Docker Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
-                  <>Docker</>
-                </Skill>
+                <Skill iconSrc={gitIcon} title="Git"/>
+                <Skill iconSrc={dockerIcon} title="Docker"/>
               </>
             </BorderTitleContainer>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function Skill({ iconSrc, title }) {
+  return (
+    <div className="
+      w-16 h-fit m-auto group
+      sm:w-18
+      md:w-20
+      lg:w-22
+      xl:w-24
+    ">
+      <div className="
+        p-1.75 flex justify-center items-center
+        md:p-2.25
+        lg:p-3
+      ">
+        <img src={iconSrc} alt={`${title} Icon`} className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
+      </div>
+      <div className="
+        text-xs font-body text-center pt-0.75 pb-0.25 border-t-3 border-neutral-1
+        sm:text-sm
+        md:text-md
+      ">
+        {title}
+      </div>
+    </div>
   );
 }
