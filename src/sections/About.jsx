@@ -3,11 +3,11 @@ import profileImg from '../assets/images/profile/read.jpg';
 export default function About() {
   return (
     <section id="about" className="
-      mt-16 px-8 flex flex-col gap-8
-      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-[30%_50%] sm:[grid-template-areas:'image_content'] sm:place-content-center
+      mt-16 px-8 flex flex-col gap-8 place-content-center
+      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-[35%_45%] sm:[grid-template-areas:'image_content']
       md:mt-24
-      lg:mt-28 lg:gap-16
-      xl:mt-32 xl:gap-20 xl:grid-cols-[20%_40%]
+      lg:mt-28 lg:gap-12
+      xl:mt-32 xl:gap-16
     ">
       <div className="mx-auto [grid-area:content]">
         <div className="mb-4 flex items-center gap-4 sm:mb-6 sm:gap-8">
@@ -43,7 +43,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex justify-center items-center [grid-area:image] h-full">
-        <img src={profileImg} alt="" className="aspect-video object-cover rounded-md lg:rounded-lg shadow-lg shadow-black sm:aspect-auto sm:h-full"/>
+        <img src={profileImg} alt="" className="aspect-video object-cover rounded-md lg:rounded-lg shadow-lg shadow-black sm:h-full"/>
       </div>
     </section>
   );
