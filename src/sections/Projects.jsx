@@ -1,3 +1,5 @@
+import SectionHeading from "../components/SectionHeading.jsx";
+
 export default function Projects() {
   return (
     <section id="projects" className="
@@ -7,16 +9,9 @@ export default function Projects() {
       lg:mt-42 lg:w-[80%]
       xl:mt-48 xl:w-[70%]
     ">
-      <div className="
-        w-full mb-8 flex items-center gap-4
-        sm:mb-10 sm:gap-8
-        md:mb-12
-        lg:mb-14
-        xl:mb-16
-      ">
-        <h2>PROJECTS</h2>
-        <span className="w-1/2 h-0.25 bg-highlight-1"></span>
-      </div>
+      <SectionHeading className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
+        PROJECTS
+      </SectionHeading>
       <div className="flex flex-col gap-2">
 
       </div>

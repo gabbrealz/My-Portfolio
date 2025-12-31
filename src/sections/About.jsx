@@ -1,3 +1,4 @@
+import SectionHeading from '../components/SectionHeading.jsx';
 import profileImg from '../assets/images/profile/read.jpg';
 
 export default function About() {
@@ -10,10 +11,9 @@ export default function About() {
       xl:mt-32 xl:gap-16
     ">
       <div className="mx-auto [grid-area:content]">
-        <div className="mb-4 flex items-center gap-4 sm:mb-6 sm:gap-8">
-          <h2 className="whitespace-nowrap">ABOUT ME</h2>
-          <span className="w-2/5 h-0.25 bg-highlight-1"></span>
-        </div>
+        <SectionHeading className="mb-4 sm:mb-6">
+          ABOUT ME
+        </SectionHeading>
         <div className="flex flex-col gap-6 text-shadow-md text-shadow-black">
           <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
             Hello! My name is Christian, and I’m a CS sophomore student at Asia Pacific College.

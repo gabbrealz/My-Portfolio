@@ -1,5 +1,5 @@
-import Skill from "../components/Skill.jsx";
-import { BorderTitleContainer } from "../components/BorderTitleContainer.jsx";
+import SectionHeading from "../components/SectionHeading.jsx";
+import { BorderTitleContainer } from "../components/Container.jsx";
 
 import htmlIcon from "../assets/images/skill-icons/language/html-5.png";
 import cssIcon from "../assets/images/skill-icons/language/css-3.png";
@@ -28,17 +28,9 @@ export default function Skills() {
       lg:mt-42 lg:w-[80%]
       xl:mt-48 xl:w-[70%]
     ">
-      <div className="
-        w-full mb-8 flex items-center gap-4
-        sm:mb-10 sm:gap-8 sm:justify-center
-        md:mb-12
-        lg:mb-14
-        xl:mb-16
-      ">
-        <span className="hidden w-1/4 h-0.25 bg-highlight-1 sm:inline"></span>
-        <h2>SKILLS</h2>
-        <span className="w-1/2 h-0.25 bg-highlight-1 sm:w-1/4"></span>
-      </div>
+      <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
+        SKILLS
+      </SectionHeading>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
         <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
           <>LANGUAGES</>
