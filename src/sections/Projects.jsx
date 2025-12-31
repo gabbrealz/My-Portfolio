@@ -8,14 +8,14 @@ export default function Projects() {
       xl:mt-48 xl:w-[70%]
     ">
       <div className="
-        w-full mb-8 flex justify-center items-center gap-4
+        w-full mb-8 flex items-center gap-4
         sm:mb-10 sm:gap-8
         md:mb-12
         lg:mb-14
         xl:mb-16
       ">
         <h2>PROJECTS</h2>
-        <span className="w-full h-0.25 bg-highlight-1"></span>
+        <span className="w-1/2 h-0.25 bg-highlight-1"></span>
       </div>
       <div className="flex flex-col gap-2">
 
