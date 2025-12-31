@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <>
       <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center md:h-16">
-        <a className="font-heading text-md whitespace-nowrap sm:text-lg md:text-xl">
-          CHRISTIAN AGOT
+        <a className="font-body text-sm px-2.5 py-0.25 border-2 rounded-xl whitespace-nowrap sm:text-md md:text-lg">
+          AGOT_
         </a>
         <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-8 lg:gap-x-12 xl:gap-x-16">
           <a className="font-body">About</a>
