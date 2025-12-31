@@ -1,6 +1,6 @@
 import { Children } from "react";
 
-export default function SkillCard({ children }) {
+export default function Skill({ children }) {
   const [ techIcon, title ] = Children.toArray(children);
 
   return (

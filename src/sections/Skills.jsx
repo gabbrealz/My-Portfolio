@@ -1,5 +1,5 @@
-import SkillCard from "../components/SkillCard.jsx";
-import SkillsContainer from "../components/SkillsContainer.jsx";
+import Skill from "../components/Skill.jsx";
+import { BorderTitleContainer } from "../components/BorderTitleContainer.jsx";
 
 import htmlIcon from "../assets/images/skill-icons/language/html-5.png";
 import cssIcon from "../assets/images/skill-icons/language/css-3.png";
@@ -40,84 +40,84 @@ export default function Skills() {
         <span className="w-1/2 h-0.25 bg-highlight-1 sm:w-1/4"></span>
       </div>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
-        <SkillsContainer gridColumns={3}>
+        <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
           <>LANGUAGES</>
           <>
-            <SkillCard>
+            <Skill>
               <img src={htmlIcon} alt="HTML Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>HTML</>
-            </SkillCard>
-            <SkillCard>
+            </Skill>
+            <Skill>
               <img src={cssIcon} alt="CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>CSS</>
-            </SkillCard>
-            <SkillCard>
+            </Skill>
+            <Skill>
               <img src={jsIcon} alt="JS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>JavaScript</>
-            </SkillCard>
-            <SkillCard>
+            </Skill>
+            <Skill>
               <img src={pythonIcon} alt="Python Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>Python</>
-            </SkillCard>
-            <SkillCard>
+            </Skill>
+            <Skill>
               <img src={javaIcon} alt="Java Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>Java</>
-            </SkillCard>
-            <SkillCard>
+            </Skill>
+            <Skill>
               <img src={cppIcon} alt="C++ Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
               <>C++</>
-            </SkillCard>
+            </Skill>
           </>
-        </SkillsContainer>
+        </BorderTitleContainer>
         <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
-          <SkillsContainer>
+          <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
             <>FRAMEWORKS</>
             <>
-              <SkillCard>
+              <Skill>
                 <img src={reactIcon} alt="React Icon" className="rotate-30 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>React</>
-              </SkillCard>
-              <SkillCard>
+              </Skill>
+              <Skill>
                 <img src={tailwindIcon} alt="Tailwind CSS Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Tailwind</>
-              </SkillCard>
-              <SkillCard>
+              </Skill>
+              <Skill>
                 <img src={bootstrapIcon} alt="Bootstrap Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Bootstrap</>
-              </SkillCard>
-              <SkillCard>
+              </Skill>
+              <Skill>
                 <img src={springIcon} alt="Spring Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                 <>Spring</>
-              </SkillCard>
+              </Skill>
             </>
-          </SkillsContainer>
+          </BorderTitleContainer>
           <div className="flex flex-col grow gap-4 lg:gap-6">
-            <SkillsContainer>
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
               <>DATABASES</>
               <>
-                <SkillCard>
+                <Skill>
                   <img src={postgresIcon} alt="Postgres Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Postgres</>
-                </SkillCard>
-                <SkillCard>
+                </Skill>
+                <Skill>
                   <img src={mysqlIcon} alt="MySQL Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>MySQL</>
-                </SkillCard>
+                </Skill>
               </>
-            </SkillsContainer>
-            <SkillsContainer>
+            </BorderTitleContainer>
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleSize="text-xs sm:text-sm md:text-md">
               <>TOOLS</>
               <>
-                <SkillCard>
+                <Skill>
                   <img src={gitIcon} alt="Git Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Git</>
-                </SkillCard>
-                <SkillCard>
+                </Skill>
+                <Skill>
                   <img src={dockerIcon} alt="Docker Icon" className="size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12"/>
                   <>Docker</>
-                </SkillCard>
+                </Skill>
               </>
-            </SkillsContainer>
+            </BorderTitleContainer>
           </div>
         </div>
       </div>
