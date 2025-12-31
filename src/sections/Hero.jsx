@@ -1,7 +1,7 @@
 import Lanyard from "../components/Lanyard.jsx";
-import GitHubIcon from "../assets/svg/github.svg?react";
-import LinkedInIcon from "../assets/svg/linkedin.svg?react";
-import InstagramIcon from "../assets/svg/instagram.svg?react";
+import GitHubIcon from "../assets/svg/icons/github.svg?react";
+import LinkedInIcon from "../assets/svg/icons/linkedin.svg?react";
+import InstagramIcon from "../assets/svg/icons/instagram.svg?react";
 
 export default function Hero() {
   return (

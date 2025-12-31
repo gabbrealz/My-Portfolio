@@ -19,7 +19,7 @@
 @layer base {
   * { @apply text-white; }
   body {
-    background: url('svg/body-bg.svg') no-repeat center center;
+    background: url('svg/background/body-bg.svg') no-repeat center center;
     background-size: cover;
     overflow-x: hidden;
   }
