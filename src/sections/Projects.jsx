@@ -1,3 +1,4 @@
+import { Children } from "react";
 import SectionHeading from "../components/SectionHeading.jsx";
 
 export default function Projects() {
@@ -16,5 +17,16 @@ export default function Projects() {
 
       </div>
     </section>
+  );
+}
+
+function Project({ imgSrc, left = false, className, children }) {
+  const [ name, description, techStack, githubLink ] = Children.toArray(children);
+  const techStackArray = Children.toArray(techStack);
+
+  return (
+    <div className={`group ${className}`}>
+
+    </div>
   );
 }
