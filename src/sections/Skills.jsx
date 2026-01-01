@@ -32,7 +32,7 @@ export default function Skills() {
         SKILLS
       </SectionHeading>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
-        <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleClassName="text-xs sm:text-sm md:text-md">
+        <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
           <>LANGUAGES</>
           <>
             <Skill iconSrc={htmlIcon} title="HTML"/>
@@ -44,7 +44,7 @@ export default function Skills() {
           </>
         </BorderTitleContainer>
         <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
-          <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleClassName="text-xs sm:text-sm md:text-md">
+          <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
             <>FRAMEWORKS</>
             <>
               <Skill iconSrc={reactIcon} title="React" iconClassName="rotate-30"/>
@@ -54,14 +54,14 @@ export default function Skills() {
             </>
           </BorderTitleContainer>
           <div className="flex flex-col grow gap-4 lg:gap-6">
-            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleClassName="text-xs sm:text-sm md:text-md">
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
               <>DATABASES</>
               <>
                 <Skill iconSrc={postgresIcon} title="PostgreSQL"/>
                 <Skill iconSrc={mysqlIcon} title="MySQL"/>
               </>
             </BorderTitleContainer>
-            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4" titleClassName="text-xs sm:text-sm md:text-md">
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
               <>DEVOPS</>
               <>
                 <Skill iconSrc={gitIcon} title="Git"/>
