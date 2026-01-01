@@ -1,7 +1,7 @@
 import { Children } from "react";
 
 export function Container({ className, children }) {
-  return <div className={`bg-neutral-2/60 backdrop-blur-xs border-2 border-neutral-1 rounded-lg ${className}`}>{children}</div>;
+  return <div className={`bg-neutral-2/60 backdrop-blur-xs border-2 border-neutral-1 rounded-lg hover:bg-neutral-2 transition-bg duration-150 ${className}`}>{children}</div>;
 }
 
 export function BorderTitleContainer({ className, titleAlign = "left", titleClassName, children }) {

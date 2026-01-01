@@ -1,6 +1,7 @@
 import { Children } from "react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { Container } from "../components/Container.jsx";
+import ArrowRight from "../assets/svg/icons/arrow-small-right.svg?react"
 
 import directClothingImg from "../assets/images/projects/Direct-Clothing.png";
 import pharmaSearchImg from "../assets/images/projects/PharmaSearch.png";
@@ -20,7 +21,7 @@ export default function Projects() {
         PROJECTS
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
-        <Project imgSrc={directClothingImg} className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%]">
           <>Direct Clothing</>
           <>
             A Spring Boot web application using the mock brand, Direct Clothing.
@@ -33,7 +34,7 @@ export default function Projects() {
             <>Maven</>
           </>
         </Project>
-        <Project imgSrc={pharmaSearchImg} className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={pharmaSearchImg} githubLink="https://github.com/gabbrealz/Pharma-Search" className="w-[300px] sm:w-[45%]">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -45,7 +46,7 @@ export default function Projects() {
             <>Qt</>
           </>
         </Project>
-        <Project imgSrc={urlScannerImg} className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={urlScannerImg} githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner" className="w-[300px] sm:w-[45%]">
           <>Malicious URL Scanner</>
           <>
             The project uses two Python programs, client and server, featuring
@@ -57,7 +58,7 @@ export default function Projects() {
             <>FastAPI</>
           </>
         </Project>
-        <Project imgSrc={logicSolverImg} className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={logicSolverImg} githubLink="https://github.com/gabbrealz/Logic-Solver" className="w-[300px] sm:w-[45%]">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate
@@ -74,19 +75,20 @@ export default function Projects() {
   );
 }
 
-function Project({ imgSrc, className = "", children }) {
-  const [ name, description, techStack, githubLink ] = Children.toArray(children);
+function Project({ imgSrc, className = "", githubLink = "https://github.com/gabbrealz", children }) {
+  const [ name, description, techStack ] = Children.toArray(children);
   const techStackArray = Children.toArray(techStack.props.children);
 
   return (
     <Container className={`flex flex-col ${className}`}>
       <img src={imgSrc} alt={`${name}`} className="object-contain w-full rounded-t-lg" />
-      <div className="grow p-2 md:p-3 lg:p-4 flex flex-col">
-        <a>
-          <h3 className="mb-1 font-heading text-highlight-1 text-md text-center md:text-lg lg:text-xl">
+      <a href={`${githubLink}`} target="_blank" className="group grow p-2 flex flex-col md:p-3 lg:p-4">
+        <div className="mb-1 flex justify-center items-center gap-2 md:mb-1.25 lg:mb-1.5">
+          <h3 className="w-fit font-heading text-highlight-1 group-hover:text-highlight-2 transition-color duration-150 text-md md:text-lg lg:text-xl">
             {name}
           </h3>
-        </a>
+          <ArrowRight className="float-right size-5 origin-center -rotate-45 fill-highlight-1 group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-transform transition-color duration-150" />
+        </div>
         <div className="mb-3 text-xs font-body sm:mb-4 sm:text-sm md:text-md">
           {description}
         </div>
@@ -99,7 +101,7 @@ function Project({ imgSrc, className = "", children }) {
             ))
           }
         </div>
-      </div>
+      </a>
     </Container>
   );
 }
