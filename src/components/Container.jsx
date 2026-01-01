@@ -4,7 +4,7 @@ export function Container({ className, children }) {
   return <div className={`relative bg-neutral-2/60 backdrop-blur-xs border-2 border-neutral-1 rounded-lg ${className}`}>{children}</div>;
 }
 
-export function BorderTitleContainer({ className, titleAlign = "left", titleSize, children }) {
+export function BorderTitleContainer({ className, titleAlign = "left", titleClassName, children }) {
   const [ title, content ] = Children.toArray(children);
 
   return (
@@ -14,9 +14,9 @@ export function BorderTitleContainer({ className, titleAlign = "left", titleSize
         ${
           titleAlign === "left" ? "left-0 translate-x-4" :
           titleAlign === "center" ? "left-1/2 -translate-x-1/2" :
-          titleAlign === "right" ? "right-0 -translate-x-4" : "left-0"
+          titleAlign === "right" ? "right-0 -translate-x-4" : "left-0 translate-x-4"
         }
-        ${titleSize}
+        ${titleClassName}
       `}>
         {title}
       </span>
