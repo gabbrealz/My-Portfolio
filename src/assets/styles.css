@@ -17,13 +17,13 @@
 }
 
 @layer base {
-  * { @apply text-white; }
+  * { @apply text-white selection:bg-highlight-1 selection:text-secondary-1; }
   body {
     background: url('svg/background/body-bg.svg') no-repeat center center;
     background-size: cover;
     overflow-x: hidden;
   }
-  header { @apply bg-linear-to-r from-neutral-1/50 to-secondary-1/60 backdrop-blur-md; }
+  header { @apply bg-linear-to-br from-primary-1/50 to-secondary-2/60 backdrop-blur-md; }
   h1, h2 { @apply text-highlight-1 text-shadow-lg text-shadow-black tracking-wider; }
   h2 { @apply font-heading text-xl md:text-2xl lg:text-3xl; }
 }
