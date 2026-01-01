@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center md:h-16">
-        <a className="font-body text-sm px-2.25 py-0.25 border-2 whitespace-nowrap sm:text-md md:text-lg">
+        <a className="font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2">
           AGOT_
         </a>
         <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-8 lg:gap-x-12 xl:gap-x-16">
