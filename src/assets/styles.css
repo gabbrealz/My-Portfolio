@@ -17,7 +17,7 @@
 }
 
 @layer base {
-  * { @apply text-white selection:bg-highlight-1 selection:text-secondary-1; }
+  * { @apply text-white selection:bg-highlight-1 selection:text-black; }
   body {
     background: url('svg/background/body-bg.svg') no-repeat center center;
     background-size: cover;
@@ -26,4 +26,5 @@
   header { @apply bg-linear-to-br from-primary-1/50 to-secondary-2/60 backdrop-blur-md; }
   h1, h2 { @apply text-highlight-1 text-shadow-md text-shadow-black tracking-wider; }
   h2 { @apply font-heading text-xl md:text-2xl lg:text-3xl; }
+  img { @apply select-none }
 }
