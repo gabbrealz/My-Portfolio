@@ -13,7 +13,6 @@ export default function Header() {
           <a className="font-body">About</a>
           <a className="font-body">Skills</a>
           <a className="font-body">Projects</a>
-          <a className="font-body">Journey</a>
           <a className="font-body">Contact</a>
         </nav>
         <button className="cursor-pointer p-2 w-10 h-10 text-2xl flex justify-center items-center transition duration-200 md:hidden"
@@ -40,12 +39,6 @@ export default function Header() {
             ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-80
           `}>
             Projects
-          </a>
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-80
-          `}>
-            Journey
           </a>
           <a className={`
             py-1 text-center font-body bg-secondary-1 rounded-r-lg 
