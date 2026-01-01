@@ -22,7 +22,7 @@ export default function Hero() {
             <span className="inline-block mb-1 text-highlight-1 text-sm sm:text-md md:text-lg md:mb-2 lg:text-xl">
               HEY THERE, I'M
             </span><br/>
-            <span className="text-highlight-2 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
+            <span className="text-highlight-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
               CHRISTIAN AGOT
             </span>
           </h1>
