@@ -10,7 +10,7 @@ import Footer from './sections/Footer.jsx';
 
 export default function App() {
   return (
-    <ClickSpark sparkSize={8} sparkRadius={40} duration={500}>
+    <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
       <Header/>
       <Hero/>
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">

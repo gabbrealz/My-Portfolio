@@ -9,7 +9,7 @@ export default function Strengths() {
     <section id="projects" className="mx-auto">
       <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
         <>WHAT I'M GOOD AT</>
-        <>These are my strengths in software development</>
+        <>These are my strengths in software development.</>
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-8 md:gap-0">
         <BorderTitleContainer className="group rounded-none md:w-[50%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
