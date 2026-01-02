@@ -1,7 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-export default function Header() {
+export default function Header({ sections, sectionRefs }) {
   const [show, setShow] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const navRef = useRef(null);
+  const pillRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (activeIndex === 0) pillRef.current.style.opacity = 100;
+            setActiveIndex(sectionRefs.current.indexOf(entry.target));
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    sectionRefs.current.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex === 0) {
+      pillRef.current.style.opacity = 0;
+      return;
+    }
+    const navItem = navRef.current.children[activeIndex];
+    pillRef.current.style.width = `${navItem.offsetWidth + 32}px`;
+    pillRef.current.style.transform = `translateX(${navItem.offsetLeft - 16}px)`;
+  }, [activeIndex]);
 
   return (
     <>
@@ -9,12 +39,22 @@ export default function Header() {
         <a className="select-none font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2">
           AGOT_
         </a>
-        <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-8 lg:gap-x-12 xl:gap-x-16">
-          <a className="font-body">About</a>
-          <a className="font-body">Strengths</a>
-          <a className="font-body">Skills</a>
-          <a className="font-body">Projects</a>
-          <a className="font-body">Contact</a>
+        <nav ref={navRef} className="hidden md:relative md:flex md:mx-auto md:w-3/5 md:justify-between md:gap-x-8 lg:gap-x-12 lg:w-2/5 xl:gap-x-16">
+          <span ref={pillRef} className="hidden z-0 absolute h-full bg-white/10 rounded-full origin-center transition-transform duration-200 md:block"></span>
+          {
+            sections.map((section, i) => {
+              if (i === 0) return null;
+              else return (
+                <a key={i}>
+                  <span className="relative z-10 font-body cursor-pointer"
+                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
+                  >
+                    {section}
+                  </span>
+                </a>
+              );
+            })
+          }
         </nav>
         <button className="cursor-pointer p-2 w-10 h-10 text-2xl flex justify-center items-center transition duration-200 md:hidden"
                 onClick={() => setShow(!show)}>
