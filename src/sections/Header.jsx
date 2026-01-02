@@ -27,6 +27,7 @@ export default function Header() {
         </a>
         <nav className="hidden md:flex md:w-full md:justify-center md:items-center md:gap-x-8 lg:gap-x-12 xl:gap-x-16">
           <a className="font-body">About</a>
+          <a className="font-body">Strengths</a>
           <a className="font-body">Skills</a>
           <a className="font-body">Projects</a>
           <a className="font-body">Contact</a>
@@ -43,6 +44,12 @@ export default function Header() {
             ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350
           `}>
             About
+          </a>
+          <a className={`
+            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
+            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-50
+          `}>
+            Strengths
           </a>
           <a className={`
             py-1 text-center font-body bg-secondary-1 rounded-r-lg 
