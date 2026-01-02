@@ -84,7 +84,7 @@ function Skill({ iconSrc, title, iconClassName = "" }) {
         md:p-2.25
         lg:p-3
       ">
-        <img src={iconSrc} alt={`${title} Icon`} className={`group-hover:scale-115 group-hover:grayscale-0 transition-scale transition-grayscale duration-150 grayscale-50 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12 ${iconClassName}`}/>
+        <img src={iconSrc} alt={`${title} Icon`} className={`group-hover:scale-115 group-hover:grayscale-0 transition-transform duration-150 grayscale-50 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12 ${iconClassName}`}/>
       </div>
       <div className="
         text-xs font-body text-center pt-0.75 pb-0.25 border-t-3 border-neutral-1

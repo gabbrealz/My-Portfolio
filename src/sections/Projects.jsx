@@ -23,7 +23,7 @@ export default function Projects() {
         <Project imgSrc={directClothingImg} hoverImgSrc={hoverDirectClothingImg}
                  githubLink="https://github.com/gabbrealz/Direct-Clothing"
                  className="w-[300px] sm:w-[45%]
-         ">
+        ">
           <>Direct Clothing</>
           <>
             A Spring Boot web application using the mock brand, Direct Clothing.
@@ -39,7 +39,7 @@ export default function Projects() {
         <Project imgSrc={pharmaSearchImg} hoverImgSrc={hoverPharmaSearchImg}
                  githubLink="https://github.com/gabbrealz/Pharma-Search"
                  className="w-[300px] sm:w-[45%]
-         ">
+        ">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -54,7 +54,7 @@ export default function Projects() {
         <Project imgSrc={urlScannerImg} hoverImgSrc={hoverURLScannerImg}
                  githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner"
                  className="w-[300px] sm:w-[45%]
-         ">
+        ">
           <>Malicious URL Scanner</>
           <>
             The project uses two Python programs, client and server, featuring
@@ -69,7 +69,7 @@ export default function Projects() {
         <Project imgSrc={logicSolverImg} hoverImgSrc={hoverLogicSolverImg}
                  githubLink="https://github.com/gabbrealz/Logic-Solver"
                  className="w-[300px] sm:w-[45%]
-         ">
+        ">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate
@@ -91,7 +91,7 @@ function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://gi
   const techStackArray = Children.toArray(techStack.props.children);
 
   return (
-    <Container className={`flex flex-col ${className}`}>
+    <Container className={`flex flex-col hover:-translate-y-2 transition-transform ${className}`}>
       <div className="relative">
         <img src={imgSrc} alt={`${name}`} className="absolute top-0 left-0 object-contain rounded-t-lg hover:opacity-0 transition-opacity duration-150" />
         <img src={hoverImgSrc} alt={`${name} hover`} className="object-contain rounded-t-lg" />
@@ -101,7 +101,7 @@ function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://gi
           <h3 className="w-fit font-heading text-highlight-1 group-hover:text-highlight-2 transition-color duration-150 text-md md:text-lg lg:text-xl">
             {name}
           </h3>
-          <ArrowRight className="float-right size-5 origin-center -rotate-45 fill-highlight-1 group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-transform transition-color duration-150" />
+          <ArrowRight className="float-right size-5 origin-center -rotate-45 fill-highlight-1 group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-transform transition-colors duration-150" />
         </div>
         <div className="mb-3 text-xs font-body sm:mb-4 sm:text-sm md:text-md">
           {description}
