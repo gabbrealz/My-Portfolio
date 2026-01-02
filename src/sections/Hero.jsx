@@ -47,12 +47,12 @@ export default function Hero() {
             lg:mt-10 lg:justify-start lg:gap-10
             xl:mt-12 xl:gap-12
           ">
-            <a className="z-10 px-3 border rounded-full font-body flex justify-center items-center sm:px-4 md:px-5">
+            <a className="z-10 px-3 border rounded-full font-body flex justify-center items-center sm:px-4 md:px-5 lg:px-6">
               <MailIcon className="size-4 sm:size-4.5" />
               <span className="text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">Get In Touch</span>
             </a>
             <span className="hidden w-0.25 bg-white rounded-full sm:inline"></span>
-            <div className="flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5">
+            <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
               <a className="z-10 p-2.5 border rounded-xl md:p-3">
                 <GitHubIcon className="size-5 sm:size-6" />
               </a>
