@@ -4,9 +4,9 @@ import { BorderTitleContainer } from "../components/Container.jsx";
 import codeImgSrc from "../assets/images/strengths/code.jpg";
 import planImgSrc from "../assets/images/strengths/plan.jpg";
 
-export default function Strengths() {
+export default function Strengths({ ref }) {
   return (
-    <section id="projects" className="mx-auto">
+    <section ref={ref} className="mx-auto">
       <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
         <>WHAT I'M GOOD AT</>
         <>These are my strengths in software development.</>

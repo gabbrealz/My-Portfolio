@@ -19,9 +19,9 @@ import postgresIcon from "../assets/images/skill-icons/database/postgre.png";
 import gitIcon from "../assets/images/skill-icons/tool/git.png";
 import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 
-export default function TechSkills() {
+export default function TechSkills({ ref }) {
   return (
-    <section id="skills" className="mx-auto flex flex-col justify-center items-center">
+    <section ref={ref} className="mx-auto flex flex-col justify-center items-center">
       <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
         <>TECH SKILLS</>
         <>The technologies and tools I've worked with to build my projects.</>

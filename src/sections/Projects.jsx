@@ -12,9 +12,9 @@ import hoverURLScannerImg from "../assets/images/projects/hover-URL-Scanner.png"
 import logicSolverImg from "../assets/images/projects/Logic-Solver.png";
 import hoverLogicSolverImg from "../assets/images/projects/hover-Logic-Solver.png";
 
-export default function Projects() {
+export default function Projects({ ref }) {
   return (
-    <section id="projects" className="mx-auto">
+    <section ref={ref} className="mx-auto">
       <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
         <>FEATURED PROJECTS</>
         <>Some of the projects I've built that showcase my ability as a developer.</>

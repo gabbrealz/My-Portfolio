@@ -1,9 +1,9 @@
 import SectionHeading from '../components/SectionHeading.jsx';
 import profileImg from '../assets/images/profile/read.jpg';
 
-export default function About() {
+export default function About({ ref }) {
   return (
-    <section id="about" className="
+    <section ref={ref} className="
       mt-16 flex flex-col gap-8
       sm:px-0 sm:grid sm:grid-cols-2 sm:[grid-template-areas:'image_content']
       lg:gap-12

@@ -1,8 +1,8 @@
 import SendIcon from "../assets/svg/icons/paper-plane.svg?react";
 
-export default function Contact() {
+export default function Contact({ ref }) {
   return (
-    <section id="contact" className="mx-auto min-h-[40vh] mb-[5vh] sm:mb-[10vh] md:mb-[15vh] lg:mb-[20vh] xl:mb-[25vh]">
+    <section ref={ref} className="mx-auto min-h-[40vh] mb-[5vh] sm:mb-[10vh] md:mb-[15vh] lg:mb-[20vh] xl:mb-[25vh]">
       <h1 className="mb-4 sm:mb-6 md:mb-8">
         <span className="block mb-1 text-center text-highlight-1 text-sm sm:text-md md:text-lg md:mb-2 lg:text-xl">
           GOT AN IDEA? LET'S

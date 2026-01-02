@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ClickSpark from './components/ClickSpark.jsx';
 import Header from './sections/Header.jsx';
 import Hero from './sections/Hero.jsx';
@@ -9,16 +10,22 @@ import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
 
 export default function App() {
+  const sections = ["hero", "About", "Strengths", "Skills", "Projects", "Contact"];
+  const sectionRefs = useRef([]);
+  const addToRefs = (el) => {
+    if (el && !sectionRefs.current.includes(el)) sectionRefs.current.push(el);
+  };
+
   return (
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
-      <Header/>
-      <Hero/>
+      <Header sections={sections} sectionRefs={sectionRefs} />
+      <Hero ref={addToRefs} />
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
-        <About/>
-        <Strengths/>
-        <TechSkills/>
-        <Projects/>
-        <Contact/>
+        <About ref={addToRefs} />
+        <Strengths ref={addToRefs} />
+        <TechSkills ref={addToRefs} />
+        <Projects ref={addToRefs} />
+        <Contact ref={addToRefs} />
       </div>
       <Footer/>
     </ClickSpark>
