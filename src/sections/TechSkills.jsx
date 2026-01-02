@@ -27,7 +27,7 @@ export default function TechSkills() {
         <>The technologies and tools I've worked with to build my projects.</>
       </SectionHeading>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
-        <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
+        <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around grow hover:-translate-y-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
           <>LANGUAGES</>
           <>
             <Skill iconSrc={htmlIcon} title="HTML"/>
@@ -39,7 +39,7 @@ export default function TechSkills() {
           </>
         </BorderTitleContainer>
         <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
-          <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
+          <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around grow hover:-translate-y-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
             <>FRAMEWORKS</>
             <>
               <Skill iconSrc={reactIcon} title="React" iconClassName="rotate-30"/>
@@ -49,14 +49,14 @@ export default function TechSkills() {
             </>
           </BorderTitleContainer>
           <div className="flex flex-col grow gap-4 lg:gap-6">
-            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around grow hover:translate-x-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
               <>DATABASES</>
               <>
                 <Skill iconSrc={postgresIcon} title="PostgreSQL"/>
                 <Skill iconSrc={mysqlIcon} title="MySQL"/>
               </>
             </BorderTitleContainer>
-            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">
+            <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around grow hover:translate-x-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
               <>DEVOPS</>
               <>
                 <Skill iconSrc={gitIcon} title="Git"/>
@@ -84,7 +84,8 @@ function Skill({ iconSrc, title, iconClassName = "" }) {
         md:p-2.25
         lg:p-3
       ">
-        <img src={iconSrc} alt={`${title} Icon`} className={`group-hover:scale-115 group-hover:grayscale-0 transition-transform duration-150 grayscale-50 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12 ${iconClassName}`}/>
+        <img src={iconSrc} alt={`${title} Icon`}
+             className={`group-hover:scale-115 group-hover:grayscale-0 lg:grayscale-50 transition-transform duration-150 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12 ${iconClassName}`}/>
       </div>
       <div className="
         text-xs font-body text-center pt-0.75 pb-0.25 border-t-3 border-neutral-1
