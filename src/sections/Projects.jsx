@@ -21,7 +21,7 @@ export default function Projects() {
         PROJECTS
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
-        <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%] xl:w-[40%]">
           <>Direct Clothing</>
           <>
             A Spring Boot web application using the mock brand, Direct Clothing.
@@ -34,7 +34,7 @@ export default function Projects() {
             <>Maven</>
           </>
         </Project>
-        <Project imgSrc={pharmaSearchImg} githubLink="https://github.com/gabbrealz/Pharma-Search" className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={pharmaSearchImg} githubLink="https://github.com/gabbrealz/Pharma-Search" className="w-[300px] sm:w-[45%] xl:w-[40%]">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -46,7 +46,7 @@ export default function Projects() {
             <>Qt</>
           </>
         </Project>
-        <Project imgSrc={urlScannerImg} githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner" className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={urlScannerImg} githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner" className="w-[300px] sm:w-[45%] xl:w-[40%]">
           <>Malicious URL Scanner</>
           <>
             The project uses two Python programs, client and server, featuring
@@ -58,7 +58,7 @@ export default function Projects() {
             <>FastAPI</>
           </>
         </Project>
-        <Project imgSrc={logicSolverImg} githubLink="https://github.com/gabbrealz/Logic-Solver" className="w-[300px] sm:w-[45%]">
+        <Project imgSrc={logicSolverImg} githubLink="https://github.com/gabbrealz/Logic-Solver" className="w-[300px] sm:w-[45%] xl:w-[40%]">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate
