@@ -22,7 +22,7 @@ import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto flex flex-col justify-center items-center">
-      <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
+      <SectionHeading heading="center" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
         SKILLS & EXPERTISE
       </SectionHeading>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">

@@ -11,7 +11,7 @@ import logicSolverImg from "../assets/images/projects/Logic-Solver.png";
 export default function Projects() {
   return (
     <section id="projects" className="mx-auto">
-      <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
+      <SectionHeading heading="center" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
         FEATURED PROJECTS
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
