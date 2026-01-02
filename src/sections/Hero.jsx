@@ -52,7 +52,7 @@ export default function Hero() {
               sm:px-4 md:px-5 lg:px-6
             " href="mailto:christianagot11@gmail.com">
               <MailIcon className="size-4 sm:size-4.5" />
-              <span className="text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">
+              <span className="select-none text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">
                 Get In Touch
               </span>
             </a>
