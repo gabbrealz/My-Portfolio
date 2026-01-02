@@ -20,15 +20,16 @@ export default function Contact() {
           </span>
         </p>
         <a className="
-          z-10 px-3.5 py-2.25 border rounded-lg font-body flex justify-center items-center
+          px-3.5 py-2.25 relative group border rounded-lg font-body flex justify-center items-center
           sm:rounded-xl sm:px-4 sm:py-2.5
           md:px-4.5 md:py-2.75
           lg:px-5 lg:py-3
         " href="mailto:christianagot11@gmail.com">
-          <span className="text-sm mr-2 sm:mr-3 sm:text-md md:text-lg">
+          <span className="absolute z-0 size-full rounded-lg bg-white origin-center scale-0 group-hover:scale-100 transition-transform duration-150 sm:rounded-xl"></span>
+          <span className="z-10 group-hover:text-black transition-colors duration-150 select-none text-sm mr-2 sm:mr-3 sm:text-md md:text-lg">
             Say Hello
           </span>
-          <SendIcon className="size-4 sm:size-4.5" />
+          <SendIcon className="z-10 group-hover:fill-black transition-colors duration-150 size-4 sm:size-4.5" />
         </a>
       </div>
     </section>
