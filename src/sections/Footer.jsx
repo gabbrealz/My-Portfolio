@@ -8,10 +8,10 @@ export default function Footer() {
         © 2026 · Christian Agot
       </span>
       <div className="flex justify-center gap-4">
-        <a className="p-2.5 border rounded-full md:p-2.75">
+        <a className="p-2.5 border rounded-full md:p-2.75" href="https://github.com/gabbrealz" target="_blank">
           <GitHubIcon className="size-4.5 sm:size-5.5" />
         </a>
-        <a className="p-2.5 border rounded-full md:p-2.75">
+        <a className="p-2.5 border rounded-full md:p-2.75" href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank">
           <LinkedInIcon className="size-4.5 sm:size-5.5" />
         </a>
       </div>

@@ -24,7 +24,7 @@ export default function Contact() {
           sm:rounded-xl sm:px-4 sm:py-2.5
           md:px-4.5 md:py-2.75
           lg:px-5 lg:py-3
-        ">
+        " href="mailto:christianagot11@gmail.com">
           <span className="text-sm mr-2 sm:mr-3 sm:text-md md:text-lg">
             Say Hello
           </span>
