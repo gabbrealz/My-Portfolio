@@ -1,11 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
   const [show, setShow] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const lastScrollY = useRef(0);
+
+  function onScroll() {
+    const currentY = window.scrollY;
+    setShowHeader(currentY < lastScrollY.current);
+    lastScrollY.current = currentY;
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
-      <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center md:h-16">
+      <header className={`
+        z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16
+        ${showHeader ? "" : "-translate-y-1/1"}
+      `}>
         <a className="font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2">
           AGOT_
         </a>
