@@ -5,7 +5,7 @@ import LinkedInIcon from "../assets/svg/icons/linkedin.svg?react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-screen min-h-screen h-auto lg:h-screen">
+    <section id="hero" className="w-screen min-h-screen h-auto mb-[5vh] sm:mb-[10vh] md:mb-[15vh] lg:mb-[20vh] lg:h-screen xl:mb-[25vh]">
       <div className="z-1 absolute w-full h-fit overflow-hidden -translate-y-20">
         <div className="h-fit lg:w-[130vw] lg:scale-110">
           <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
