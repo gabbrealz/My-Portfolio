@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
           </h1>
           <span className="
-            z-10 mt-4 font-body text-lg text-center leading-[1.3] text-shadow-md text-shadow-black
+            z-10 mt-6 font-body text-lg text-center leading-[1.3] text-shadow-md text-shadow-black
             sm:text-xl md:text-2xl
             lg:text-left lg:leading-[1.5]
             xl:text-3xl
@@ -42,12 +42,12 @@ export default function Hero() {
             </span>
           </span>
           <div className="
-            mt-6 w-full flex flex-wrap justify-center gap-4
-            md:mt-8 md:gap-8
-            lg:mt-10 lg:justify-start lg:gap-10
-            xl:mt-12 xl:gap-12
+            mt-8 w-full flex flex-wrap justify-center gap-4
+            md:mt-10 md:gap-8
+            lg:mt-12 lg:justify-start lg:gap-10
+            xl:mt-14 xl:gap-12
           ">
-            <a className="group z-10 px-3 border border-white/40 rounded-full font-body flex justify-center items-center hover:border-white hover:bg-black/50 transition-bg transition-border duration-150
+            <a className="group z-10 px-3 border-2 border-white/40 rounded-full font-body flex justify-center items-center hover:border-white hover:bg-neutral-1/25 transition-colors duration-150
                           sm:px-4 md:px-5 lg:px-6"
                href="mailto:christianagot11@gmail.com
             ">
@@ -58,11 +58,11 @@ export default function Hero() {
             </a>
             <span className="hidden w-0.25 bg-white rounded-full sm:inline"></span>
             <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
-              <a className="z-10 p-2.5 bg-gray-700 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://github.com/gabbrealz" target="_blank">
-                <GitHubIcon className="size-5 sm:size-6" />
+              <a className="z-10 p-2.5 bg-gray-800 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://github.com/gabbrealz" target="_blank">
+                <GitHubIcon className="size-5 sm:size-6 lg:size-7" />
               </a>
               <a className="z-10 p-2.5 bg-blue-500 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank">
-                <LinkedInIcon className="size-5 sm:size-6" />
+                <LinkedInIcon className="size-5 sm:size-6 lg:size-7" />
               </a>
             </div>
           </div>
