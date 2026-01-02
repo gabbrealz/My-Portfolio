@@ -23,7 +23,7 @@
     background-size: cover;
     overflow-x: hidden;
   }
-  header { @apply bg-linear-to-br from-primary-1/50 to-secondary-2/60 backdrop-blur-md; }
+  header, footer { @apply bg-linear-to-br from-primary-1/50 to-secondary-2/60 backdrop-blur-md; }
   h1, h2 { @apply font-heading text-highlight-1 text-shadow-md text-shadow-black tracking-wider; }
   img { @apply select-none }
 }

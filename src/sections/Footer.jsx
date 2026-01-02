@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <></>;
+  return (
+    <footer className="h-[20vh]">
+
+    </footer>
+  );
 }

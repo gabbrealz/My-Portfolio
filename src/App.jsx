@@ -22,6 +22,7 @@ export default function App() {
         <span className="block h-[20vh] sm:h-[25vh] md:h-[30vh] lg:h-[40vh] xl:h-[45vh]"></span>
         <Contact/>
       </div>
+      <span className="block h-[5vh] sm:h-[10vh] md:h-[15vh] lg:h-[20vh] xl:h-[25vh]"></span>
       <Footer/>
     </ClickSpark>
   );
