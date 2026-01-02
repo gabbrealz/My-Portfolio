@@ -47,16 +47,21 @@ export default function Hero() {
             lg:mt-10 lg:justify-start lg:gap-10
             xl:mt-12 xl:gap-12
           ">
-            <a className="z-10 px-3 border rounded-full font-body flex justify-center items-center sm:px-4 md:px-5 lg:px-6">
+            <a className="group z-10 px-3 border border-white/40 rounded-full font-body flex justify-center items-center hover:border-white hover:bg-black/50 transition-bg transition-border duration-150
+                          sm:px-4 md:px-5 lg:px-6"
+               href="mailto:christianagot11@gmail.com
+            ">
               <MailIcon className="size-4 sm:size-4.5" />
-              <span className="text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">Get In Touch</span>
+              <span className="text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">
+                Get In Touch
+              </span>
             </a>
             <span className="hidden w-0.25 bg-white rounded-full sm:inline"></span>
             <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
-              <a className="z-10 p-2.5 border rounded-xl md:p-3">
+              <a className="z-10 p-2.5 bg-gray-700 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://github.com/gabbrealz" target="_blank">
                 <GitHubIcon className="size-5 sm:size-6" />
               </a>
-              <a className="z-10 p-2.5 border rounded-xl md:p-3">
+              <a className="z-10 p-2.5 bg-blue-500 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank">
                 <LinkedInIcon className="size-5 sm:size-6" />
               </a>
             </div>
