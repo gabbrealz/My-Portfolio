@@ -22,11 +22,11 @@ import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 export default function Skills() {
   return (
     <section id="skills" className="
-      mt-24 mx-auto px-8 flex flex-col justify-center items-center
+      mt-24 mx-auto flex flex-col justify-center items-center
       sm:mt-30
-      md:mt-36 md:w-[85%] md:px-0
-      lg:mt-42 lg:w-[80%]
-      xl:mt-48 xl:w-[70%]
+      md:mt-36
+      lg:mt-42
+      xl:mt-48
     ">
       <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
         SKILLS

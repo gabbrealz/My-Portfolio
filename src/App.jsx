@@ -12,10 +12,13 @@ export default function App() {
     <ClickSpark sparkSize={8} sparkRadius={25} duration={200}>
       <Header/>
       <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+
+      <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+      </div>
 
       <div className="h-screen"></div>
 

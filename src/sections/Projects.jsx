@@ -11,17 +11,17 @@ import logicSolverImg from "../assets/images/projects/Logic-Solver.png";
 export default function Projects() {
   return (
     <section id="projects" className="
-      mt-24 mx-auto px-8
+      mt-24 mx-auto
       sm:mt-30
-      md:mt-36 md:w-[85%] md:px-0
-      lg:mt-42 lg:w-[80%]
-      xl:mt-48 xl:w-[70%]
+      md:mt-36
+      lg:mt-42
+      xl:mt-48
     ">
       <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
         PROJECTS
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
-        <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%] xl:w-[40%]">
+        <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%]">
           <>Direct Clothing</>
           <>
             A Spring Boot web application using the mock brand, Direct Clothing.
@@ -34,7 +34,7 @@ export default function Projects() {
             <>Maven</>
           </>
         </Project>
-        <Project imgSrc={pharmaSearchImg} githubLink="https://github.com/gabbrealz/Pharma-Search" className="w-[300px] sm:w-[45%] xl:w-[40%]">
+        <Project imgSrc={pharmaSearchImg} githubLink="https://github.com/gabbrealz/Pharma-Search" className="w-[300px] sm:w-[45%]">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -46,7 +46,7 @@ export default function Projects() {
             <>Qt</>
           </>
         </Project>
-        <Project imgSrc={urlScannerImg} githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner" className="w-[300px] sm:w-[45%] xl:w-[40%]">
+        <Project imgSrc={urlScannerImg} githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner" className="w-[300px] sm:w-[45%]">
           <>Malicious URL Scanner</>
           <>
             The project uses two Python programs, client and server, featuring
@@ -58,7 +58,7 @@ export default function Projects() {
             <>FastAPI</>
           </>
         </Project>
-        <Project imgSrc={logicSolverImg} githubLink="https://github.com/gabbrealz/Logic-Solver" className="w-[300px] sm:w-[45%] xl:w-[40%]">
+        <Project imgSrc={logicSolverImg} githubLink="https://github.com/gabbrealz/Logic-Solver" className="w-[300px] sm:w-[45%]">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate

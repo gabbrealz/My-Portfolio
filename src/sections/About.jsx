@@ -4,8 +4,8 @@ import profileImg from '../assets/images/profile/read.jpg';
 export default function About() {
   return (
     <section id="about" className="
-      mt-16 px-8 flex flex-col gap-8
-      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-[40%_45%] sm:[grid-template-areas:'image_content']
+      mt-16 flex flex-col gap-8
+      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-2 sm:[grid-template-areas:'image_content']
       md:mt-24
       lg:mt-28 lg:gap-12
       xl:mt-32 xl:gap-16
