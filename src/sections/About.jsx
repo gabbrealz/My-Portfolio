@@ -5,10 +5,9 @@ export default function About() {
   return (
     <section id="about" className="
       mt-16 flex flex-col gap-8
-      sm:mt-20 sm:px-0 sm:grid sm:grid-cols-2 sm:[grid-template-areas:'image_content']
-      md:mt-24
-      lg:mt-28 lg:gap-12
-      xl:mt-32 xl:gap-16
+      sm:px-0 sm:grid sm:grid-cols-2 sm:[grid-template-areas:'image_content']
+      lg:gap-12
+      xl:gap-16
     ">
       <div className="mx-auto [grid-area:content]">
         <SectionHeading className="mb-4 sm:mb-6">

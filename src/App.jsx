@@ -12,16 +12,16 @@ export default function App() {
     <ClickSpark sparkSize={8} sparkRadius={25} duration={200}>
       <Header/>
       <Hero/>
-
+      <span className="block h-[5vh] sm:h-[10vh] md:h-[15vh] lg:h-[20vh] xl:h-[25vh]"></span>
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
         <About/>
+        <span className="block h-[20vh] sm:h-[25vh] md:h-[30vh] lg:h-[40vh] xl:h-[45vh]"></span>
         <Skills/>
+        <span className="block h-[20vh] sm:h-[25vh] md:h-[30vh] lg:h-[40vh] xl:h-[45vh]"></span>
         <Projects/>
+        <span className="block h-[20vh] sm:h-[25vh] md:h-[30vh] lg:h-[40vh] xl:h-[45vh]"></span>
         <Contact/>
       </div>
-
-      <div className="h-screen"></div>
-
       <Footer/>
     </ClickSpark>
   );

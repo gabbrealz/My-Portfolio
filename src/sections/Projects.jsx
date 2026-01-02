@@ -10,15 +10,9 @@ import logicSolverImg from "../assets/images/projects/Logic-Solver.png";
 
 export default function Projects() {
   return (
-    <section id="projects" className="
-      mt-24 mx-auto
-      sm:mt-30
-      md:mt-36
-      lg:mt-42
-      xl:mt-48
-    ">
+    <section id="projects" className="mx-auto">
       <SectionHeading heading="center" className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16">
-        PROJECTS
+        FEATURED PROJECTS
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
         <Project imgSrc={directClothingImg} githubLink="https://github.com/gabbrealz/Direct-Clothing" className="w-[300px] sm:w-[45%]">
