@@ -47,10 +47,10 @@ export default function Hero() {
             lg:mt-12 lg:justify-start lg:gap-10
             xl:mt-14 xl:gap-12
           ">
-            <a className="group z-10 px-3 border-2 border-white/40 rounded-full font-body flex justify-center items-center hover:border-white hover:bg-neutral-1/25 transition-colors duration-150
-                          sm:px-4 md:px-5 lg:px-6"
-               href="mailto:christianagot11@gmail.com
-            ">
+            <a className="
+              group z-10 px-3 border-2 border-white/40 rounded-full font-body flex justify-center items-center hover:border-white hover:bg-neutral-1/25 transition-colors duration-150
+              sm:px-4 md:px-5 lg:px-6
+            " href="mailto:christianagot11@gmail.com">
               <MailIcon className="size-4 sm:size-4.5" />
               <span className="text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">
                 Get In Touch
