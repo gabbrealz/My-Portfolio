@@ -19,11 +19,12 @@ import postgresIcon from "../assets/images/skill-icons/database/postgre.png";
 import gitIcon from "../assets/images/skill-icons/tool/git.png";
 import dockerIcon from "../assets/images/skill-icons/tool/docker.png";
 
-export default function Skills() {
+export default function TechSkills() {
   return (
     <section id="skills" className="mx-auto flex flex-col justify-center items-center">
-      <SectionHeading heading="center" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-        SKILLS & EXPERTISE
+      <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
+        <>TECH SKILLS</>
+        <>The technologies and tools I've worked with to build my projects.</>
       </SectionHeading>
       <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
         <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around gap-1 grow sm:gap-1.5 md:gap-2 md:px-4">

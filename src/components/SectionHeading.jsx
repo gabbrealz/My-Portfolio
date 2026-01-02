@@ -1,9 +1,19 @@
-export default function SectionHeading({ heading = "left", className, children }) {
-  return <h2 className={`
-      whitespace-nowrap w-full text-xl md:text-2xl lg:text-3xl
-      ${heading === "center" ? "sm:text-center" : heading === "right" ? "text-right" : ""}
-      ${className}
-    `}>
-      {children}
-    </h2>;
+import { Children } from "react";
+
+export default function SectionHeading({ className, children }) {
+  const [ title, subtitle ] = Children.toArray(children);
+
+  return (
+    <div className={`w-full ${className}`}>
+      <h2 className="whitespace-nowrap mb-2 text-xl md:text-2xl md:mb-4 lg:text-3xl">
+        {title}
+      </h2>
+      {
+        subtitle === undefined ? null :
+          <p className="font-body text-highlight-1/80 text-xs sm:text-sm md:text-md lg:text-lg">
+            {subtitle}
+          </p>
+      }
+    </div>
+  );
 }

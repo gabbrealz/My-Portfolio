@@ -2,7 +2,7 @@ import ClickSpark from './components/ClickSpark.jsx';
 import Header from './sections/Header.jsx';
 import Hero from './sections/Hero.jsx';
 import About from './sections/About.jsx';
-import Skills from './sections/Skills.jsx';
+import TechSkills from './sections/TechSkills.jsx';
 import Projects from './sections/Projects.jsx';
 import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
@@ -14,7 +14,7 @@ export default function App() {
       <Hero/>
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
         <About/>
-        <Skills/>
+        <TechSkills/>
         <Projects/>
         <Contact/>
       </div>
