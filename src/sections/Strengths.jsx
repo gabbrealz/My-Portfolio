@@ -12,12 +12,15 @@ export default function Strengths() {
         <>These are my strengths in software development.</>
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-8 md:gap-2">
-        <BorderTitleContainer className="group rounded-none hover:-translate-x-2 transition-transform duration-150 md:w-[49%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
+        <BorderTitleContainer className="group rounded-none hover:-translate-x-2 transition-transform duration-150 md:w-[49%]"
+                              titleAlign="center"
+                              titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl
+        ">
           <>BACKEND DEVELOPMENT</>
           <>
-            <img src={codeImgSrc} alt="Java Code" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-60 transition-opacity duration-250"/>
+            <img src={codeImgSrc} alt="Java Code" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-250"/>
             <p className="
-              text-xs p-12 absolute top-0 left-0 size-full flex justify-center items-center font-body text-center group-hover:opacity-0 transition-opacity duration-250
+              text-xs p-12 absolute top-0 left-0 size-full flex justify-center items-center font-body text-center text-shadow-lg text-shadow-black
               sm:text-sm
               md:p-4
               lg:p-12 lg:text-base
@@ -28,12 +31,15 @@ export default function Strengths() {
             </p>
           </>
         </BorderTitleContainer>
-        <BorderTitleContainer className="group rounded-none hover:translate-x-2 transition-transform duration-150 md:w-[49%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
+        <BorderTitleContainer className="group rounded-none hover:translate-x-2 transition-transform duration-150 md:w-[49%]"
+                              titleAlign="center"
+                              titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl
+        ">
           <>ARCHITECTURE PLANNING</>
           <>
-            <img src={planImgSrc} alt="Notes on Data Structures" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-60 transition-opacity duration-250"/>
+            <img src={planImgSrc} alt="Notes on Data Structures" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-250"/>
             <p className="
-              text-xs p-12 absolute top-0 left-0 size-full flex justify-center items-center font-body text-center group-hover:opacity-0 transition-opacity duration-250
+              text-xs p-12 absolute top-0 left-0 size-full flex justify-center items-center font-body text-center text-shadow-lg text-shadow-black
               sm:text-sm
               md:p-4
               lg:p-12 lg:text-base
