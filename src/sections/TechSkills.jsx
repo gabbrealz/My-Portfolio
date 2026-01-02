@@ -72,27 +72,18 @@ export default function TechSkills() {
 
 function Skill({ iconSrc, title, iconClassName = "" }) {
   return (
-    <div className="
-      w-16 h-fit m-auto group
-      sm:w-18
-      md:w-20
-      lg:w-22
-      xl:w-24
-    ">
-      <div className="
-        p-1.75 flex justify-center items-center
-        md:p-2.25
-        lg:p-3
-      ">
-        <img src={iconSrc} alt={`${title} Icon`}
-             className={`group-hover:scale-115 group-hover:grayscale-0 lg:grayscale-50 transition-transform duration-150 size-8 sm:size-9 md:size-10 lg:size-11 xl:size-12 ${iconClassName}`}/>
+    <div className="w-16 h-fit m-auto group sm:w-18 md:w-20 lg:w-22 xl:w-24">
+      <div className="p-1.75 flex justify-center items-center md:p-2.25 lg:p-3">
+        <img src={iconSrc} alt={`${title} Icon`} className={`
+          group-hover:scale-115 group-hover:grayscale-0 transition-transform duration-150 size-8
+          sm:size-9 md:size-10 lg:size-11 xl:size-12
+          lg:grayscale-50
+          ${iconClassName}
+        `}/>
       </div>
-      <div className="
-        text-xs font-body text-center pt-0.75 pb-0.25 border-t-3 border-neutral-1
-        sm:text-sm
-        md:text-md
-      ">
-        {title}
+      <div className="relative py-0.5">
+        <span className="z-0 absolute top-0 left-0 size-full bg-neutral-1/60 origin-top scale-y-8 group-hover:scale-y-100 transition-transform duration-150"></span>
+        <span className="z-10 relative block text-center text-xs font-body sm:text-sm md:text-md">{title}</span>
       </div>
     </div>
   );
