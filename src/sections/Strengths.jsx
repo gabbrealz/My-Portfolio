@@ -11,8 +11,8 @@ export default function Strengths() {
         <>WHAT I'M GOOD AT</>
         <>These are my strengths in software development.</>
       </SectionHeading>
-      <div className="flex flex-wrap justify-center gap-8 md:gap-0">
-        <BorderTitleContainer className="group rounded-none md:w-[50%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-2">
+        <BorderTitleContainer className="group rounded-none md:w-[49%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
           <>BACKEND DEVELOPMENT</>
           <>
             <img src={codeImgSrc} alt="Java Code" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-60 transition-opacity duration-250"/>
@@ -28,7 +28,7 @@ export default function Strengths() {
             </p>
           </>
         </BorderTitleContainer>
-        <BorderTitleContainer className="group rounded-none md:w-[50%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
+        <BorderTitleContainer className="group rounded-none md:w-[49%]" titleAlign="center" titleClassName="z-10 whitespace-nowrap text-center text-sm sm:text-md lg:text-xl xl:text-2xl">
           <>ARCHITECTURE PLANNING</>
           <>
             <img src={planImgSrc} alt="Notes on Data Structures" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-60 transition-opacity duration-250"/>
