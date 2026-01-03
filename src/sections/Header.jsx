@@ -9,8 +9,8 @@ export default function Header({ sections, sectionRefs }) {
 
   const scrollToIndex = (i) => {
     const navItem = navRef.current.children[i];
-    pillRef.current.style.width = `${navItem.offsetWidth + 32}px`;
-    pillRef.current.style.transform = `translateX(${navItem.offsetLeft - 16}px)`;
+    pillRef.current.style.width = `${navItem.offsetWidth}px`;
+    pillRef.current.style.transform = `translateX(${navItem.offsetLeft}px)`;
   };
 
   useEffect(() => {
@@ -41,9 +41,9 @@ export default function Header({ sections, sectionRefs }) {
         </a>
         <nav ref={navRef} className="
           hidden
-          md:relative md:flex md:mx-auto md:w-3/5 md:h-1/2 md:justify-between md:items-center md:gap-x-8
-          lg:gap-x-12 lg:w-2/5
-          xl:gap-x-16"
+          md:relative md:flex md:mx-auto md:w-3/5 md:h-1/2 md:justify-between md:items-center md:gap-x-4
+          lg:gap-x-8 lg:w-2/5
+          xl:gap-x-12"
           onMouseLeave={() => { setHoverIndex(0); }}
         >
           <span ref={pillRef} className="hidden z-0 absolute h-full bg-gray-800 rounded-full origin-center transition duration-150 md:block"
@@ -54,7 +54,7 @@ export default function Header({ sections, sectionRefs }) {
               if (i === 0) return null;
               else return (
                 <a key={i}>
-                  <span className="relative z-10 font-body cursor-pointer select-none"
+                  <span className="relative z-10 px-4 font-body cursor-pointer select-none"
                         onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                         onMouseEnter={() => { setHoverIndex(i); }}
                   >
