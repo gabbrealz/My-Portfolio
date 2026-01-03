@@ -10,10 +10,7 @@ export default function Header({ sections, sectionRefs }) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (activeIndex === 0) pillRef.current.style.opacity = 100;
-            setActiveIndex(sectionRefs.current.indexOf(entry.target));
-          }
+          if (entry.isIntersecting) setActiveIndex(sectionRefs.current.indexOf(entry.target));
         });
       },
       { threshold: 0.5 }
@@ -24,10 +21,7 @@ export default function Header({ sections, sectionRefs }) {
   }, []);
 
   useEffect(() => {
-    if (activeIndex === 0) {
-      pillRef.current.style.opacity = 0;
-      return;
-    }
+    if (activeIndex === 0) return;
     const navItem = navRef.current.children[activeIndex];
     pillRef.current.style.width = `${navItem.offsetWidth + 32}px`;
     pillRef.current.style.transform = `translateX(${navItem.offsetLeft - 16}px)`;
@@ -40,14 +34,16 @@ export default function Header({ sections, sectionRefs }) {
           AGOT_
         </a>
         <nav ref={navRef} className="hidden md:relative md:flex md:mx-auto md:w-3/5 md:justify-between md:gap-x-8 lg:gap-x-12 lg:w-2/5 xl:gap-x-16">
-          <span ref={pillRef} className="hidden z-0 absolute h-full bg-white/10 rounded-full origin-center transition-transform duration-200 md:block"></span>
+          <span ref={pillRef} className="hidden z-0 absolute h-full bg-white/10 rounded-full origin-center transition duration-200 md:block"
+                style={{ opacity: activeIndex === 0 ? 0 : 1 }}>
+          </span>
           {
             sections.map((section, i) => {
               if (i === 0) return null;
               else return (
                 <a key={i}>
                   <span className="relative z-10 font-body cursor-pointer"
-                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
+                        onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                   >
                     {section}
                   </span>
