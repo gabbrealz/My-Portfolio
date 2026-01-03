@@ -46,7 +46,7 @@ export default function Header({ sections, sectionRefs }) {
           xl:gap-x-16"
           onMouseLeave={() => { setHoverIndex(0); }}
         >
-          <span ref={pillRef} className="hidden z-0 absolute h-full bg-gray-700 rounded-lg origin-center transition duration-200 md:block"
+          <span ref={pillRef} className="hidden z-0 absolute h-full bg-gray-800 rounded-full origin-center transition duration-150 md:block"
                 style={{ opacity: activeIndex === 0 && hoverIndex === 0 ? 0 : 1 }}>
           </span>
           {
