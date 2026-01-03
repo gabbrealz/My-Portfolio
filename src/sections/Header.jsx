@@ -3,8 +3,15 @@ import { useState, useEffect, useRef } from 'react';
 export default function Header({ sections, sectionRefs }) {
   const [show, setShow] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hoverIndex, setHoverIndex] = useState(0);
   const navRef = useRef(null);
   const pillRef = useRef(null);
+
+  const scrollToIndex = (i) => {
+    const navItem = navRef.current.children[i];
+    pillRef.current.style.width = `${navItem.offsetWidth + 32}px`;
+    pillRef.current.style.transform = `translateX(${navItem.offsetLeft - 16}px)`;
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -12,8 +19,7 @@ export default function Header({ sections, sectionRefs }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) setActiveIndex(sectionRefs.current.indexOf(entry.target));
         });
-      },
-      { threshold: 0.5 }
+      }, { threshold: 0.5 }
     );
     sectionRefs.current.forEach((section) => observer.observe(section));
 
@@ -21,11 +27,11 @@ export default function Header({ sections, sectionRefs }) {
   }, []);
 
   useEffect(() => {
-    if (activeIndex === 0) return;
-    const navItem = navRef.current.children[activeIndex];
-    pillRef.current.style.width = `${navItem.offsetWidth + 32}px`;
-    pillRef.current.style.transform = `translateX(${navItem.offsetLeft - 16}px)`;
-  }, [activeIndex]);
+    if (hoverIndex === 0) {
+      if (activeIndex === 0) return;
+      scrollToIndex(activeIndex);
+    } else scrollToIndex(hoverIndex);
+  }, [hoverIndex, activeIndex]);
 
   return (
     <>
@@ -33,17 +39,24 @@ export default function Header({ sections, sectionRefs }) {
         <a className="select-none font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2">
           AGOT_
         </a>
-        <nav ref={navRef} className="hidden md:relative md:flex md:mx-auto md:w-3/5 md:justify-between md:gap-x-8 lg:gap-x-12 lg:w-2/5 xl:gap-x-16">
-          <span ref={pillRef} className="hidden z-0 absolute h-full bg-white/10 rounded-full origin-center transition duration-200 md:block"
-                style={{ opacity: activeIndex === 0 ? 0 : 1 }}>
+        <nav ref={navRef} className="
+          hidden
+          md:relative md:flex md:mx-auto md:w-3/5 md:h-1/2 md:justify-between md:items-center md:gap-x-8
+          lg:gap-x-12 lg:w-2/5
+          xl:gap-x-16"
+          onMouseLeave={() => { setHoverIndex(0); }}
+        >
+          <span ref={pillRef} className="hidden z-0 absolute h-full bg-gray-700 rounded-lg origin-center transition duration-200 md:block"
+                style={{ opacity: activeIndex === 0 && hoverIndex === 0 ? 0 : 1 }}>
           </span>
           {
             sections.map((section, i) => {
               if (i === 0) return null;
               else return (
                 <a key={i}>
-                  <span className="relative z-10 font-body cursor-pointer"
+                  <span className="relative z-10 font-body cursor-pointer select-none"
                         onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
+                        onMouseEnter={() => { setHoverIndex(i); }}
                   >
                     {section}
                   </span>
