@@ -10,7 +10,7 @@ import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
 
 export default function App() {
-  const sections = ["hero", "About", "Strengths", "Skills", "Projects", "Contact"];
+  const sections = ["Hero", "About", "Strengths", "Skills", "Projects", "Contact"];
   const sectionRefs = useRef([]);
   const addToRefs = (el) => {
     if (el && !sectionRefs.current.includes(el)) sectionRefs.current.push(el);
