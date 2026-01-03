@@ -58,10 +58,10 @@ export default function Hero({ ref }) {
             </a>
             <span className="hidden w-0.25 bg-white rounded-full sm:inline"></span>
             <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
-              <a className="z-10 p-2.5 bg-gray-800 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://github.com/gabbrealz" target="_blank">
+              <a className="z-10 p-2.5 bg-gray-800 rounded-xl hover:scale-110 transition-transform duration-150 md:p-3" href="https://github.com/gabbrealz" target="_blank">
                 <GitHubIcon className="size-5 sm:size-6 lg:size-7" />
               </a>
-              <a className="z-10 p-2.5 bg-blue-500 rounded-xl hover:scale-110 transition-scale duration-150 md:p-3" href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank">
+              <a className="z-10 p-2.5 bg-blue-500 rounded-xl hover:scale-110 transition-transform duration-150 md:p-3" href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank">
                 <LinkedInIcon className="size-5 sm:size-6 lg:size-7" />
               </a>
             </div>
