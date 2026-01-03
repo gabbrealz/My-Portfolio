@@ -1,4 +1,4 @@
-import { Children } from "react";
+import { Children, useState } from "react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { Container } from "../components/Container.jsx";
 import ArrowRight from "../assets/svg/icons/arrow-small-right.svg?react"
@@ -87,13 +87,17 @@ export default function Projects({ ref }) {
 }
 
 function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://github.com/gabbrealz", children }) {
+  const [showHoverImg, setShowHoverImg] = useState(false);
   const [ name, description, techStack ] = Children.toArray(children);
   const techStackArray = Children.toArray(techStack.props.children);
 
   return (
     <Container className={`flex flex-col hover:-translate-y-2 transition-transform ${className}`}>
-      <div className="relative">
-        <img src={imgSrc} alt={`${name}`} className="absolute top-0 left-0 object-contain rounded-t-lg hover:opacity-0 transition-opacity duration-150" />
+      <div className="relative" onClick={() => setShowHoverImg(!showHoverImg)}>
+        <img src={imgSrc} alt={`${name}`} className={`
+          absolute top-0 left-0 object-contain rounded-t-lg hover:opacity-0 transition-opacity duration-150 cursor-pointer
+          ${showHoverImg ? "opacity-0" : ""}
+        `}/>
         <img src={hoverImgSrc} alt={`${name} hover`} className="object-contain rounded-t-lg" />
       </div>
       <a href={`${githubLink}`} target="_blank" className="group grow p-2 flex flex-col md:p-3 lg:p-4">
