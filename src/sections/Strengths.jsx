@@ -11,7 +11,7 @@ export default function Strengths({ ref }) {
         <>WHAT I'M GOOD AT</>
         <>These are my strengths in software development.</>
       </SectionHeading>
-      <div className="flex flex-wrap justify-center gap-8 md:gap-2">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-4">
         <Container className="group rounded-none hover:-translate-x-2 transition-transform duration-150 md:w-[49%]">
           <img src={codeImgSrc} alt="Java Code" className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150"/>
           <div className="h-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 sm:p-24 md:gap-4 md:p-4 lg:gap-6 lg:p-12">
