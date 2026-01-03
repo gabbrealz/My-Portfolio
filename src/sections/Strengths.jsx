@@ -20,7 +20,7 @@ export default function Strengths({ ref }) {
             </h3>
             <p className="font-body text-center text-shadow-lg text-shadow-black text-xs sm:text-sm lg:text-base xl:text-lg xl:leading-[2]">
               I enjoy building robust backend systems using clean, maintainable code.
-              I also have a core foundation in algorithmic thinking!
+              I also have a strong foundation in algorithmic thinking!
             </p>
           </div>
         </Container>

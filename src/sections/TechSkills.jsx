@@ -26,7 +26,7 @@ export default function TechSkills({ ref }) {
         <>TECH SKILLS</>
         <>The technologies and tools I've worked with to build my projects.</>
       </SectionHeading>
-      <div className="w-full flex flex-wrap justify-around grow gap-4 lg:gap-6">
+      <div className="w-full flex flex-wrap justify-around grow gap-x-2 gap-y-4 md:gap-x-4 lg:gap-6">
         <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around grow hover:-translate-y-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
           <>LANGUAGES</>
           <>
@@ -38,7 +38,7 @@ export default function TechSkills({ ref }) {
             <Skill iconSrc={cppIcon} title="C++"/>
           </>
         </BorderTitleContainer>
-        <div className="h-fit flex flex-wrap grow gap-4 lg:gap-6">
+        <div className="h-fit flex flex-wrap grow gap-x-2 gap-y-4 md:gap-x-4 lg:gap-6">
           <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around grow hover:-translate-y-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
             <>FRAMEWORKS</>
             <>
@@ -48,7 +48,7 @@ export default function TechSkills({ ref }) {
               <Skill iconSrc={springIcon} title="Spring"/>
             </>
           </BorderTitleContainer>
-          <div className="flex flex-col grow gap-4 lg:gap-6">
+          <div className="flex flex-col grow gap-x-2 gap-y-4 md:gap-x-4 lg:gap-6">
             <BorderTitleContainer className="px-2 py-6 grid grid-cols-2 place-content-around grow hover:translate-x-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
               <>DATABASES</>
               <>
