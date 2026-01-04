@@ -10,7 +10,6 @@ import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
 
 export default function App() {
-  const sections = ["Hero", "About", "Strengths", "Skills", "Projects", "Contact"];
   const sectionRefs = useRef([]);
   const addToRefs = (el) => {
     if (el && !sectionRefs.current.includes(el)) sectionRefs.current.push(el);
@@ -18,7 +17,7 @@ export default function App() {
 
   return (
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
-      <Header sections={sections} sectionRefs={sectionRefs} />
+      <Header sectionRefs={sectionRefs} />
       <Hero ref={addToRefs} />
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
         <About ref={addToRefs} />

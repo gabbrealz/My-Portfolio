@@ -1,6 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 
-export default function Header({ sections, sectionRefs }) {
+import aboutImg from "../assets/images/header-nav/about.png";
+import strengthsImg from "../assets/images/header-nav/strengths.png";
+import skillsImg from "../assets/images/header-nav/skills.png";
+import projectsImg from "../assets/images/header-nav/projects.png";
+import contactImg from "../assets/images/header-nav/contact.png";
+
+export default function Header({ sectionRefs }) {
+  const sections = ["Hero", "About", "Strengths", "Skills", "Projects", "Contact"];
+  const sectionImages = [null, aboutImg, strengthsImg, skillsImg, projectsImg, contactImg];
+
   const [show, setShow] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoverIndex, setHoverIndex] = useState(0);
@@ -19,7 +28,7 @@ export default function Header({ sections, sectionRefs }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) setActiveIndex(sectionRefs.current.indexOf(entry.target));
         });
-      }, { threshold: 0.5 }
+      }, { threshold: 0.33 }
     );
     sectionRefs.current.forEach((section) => observer.observe(section));
 
@@ -67,38 +76,33 @@ export default function Header({ sections, sectionRefs }) {
           {show ? "✕" : "☰"}
         </button>
       </header>
-      <div className="z-50 fixed top-20 w-1/2 sm:w-1/3 md:hidden">
-        <nav className="flex flex-col gap-3">
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350
-          `}>
-            About
-          </a>
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-50
-          `}>
-            Strengths
-          </a>
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-50
-          `}>
-            Skills
-          </a>
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-80
-          `}>
-            Projects
-          </a>
-          <a className={`
-            py-1 text-center font-body bg-secondary-1 rounded-r-lg 
-            ${show ? "translate-x-0" : "-translate-x-1/1"} transition-transform duration-350 delay-100
-          `}>
-            Contact
-          </a>
+      <div className={`
+        fixed w-screen h-screen bg-black/75 md:hidden transition-opacity duration-150
+        ${show ? "z-40" : "-z-10 opacity-0"}
+      `}>
+        <nav className="mx-auto w-3/5 h-full flex flex-col justify-center gap-1.5">
+          {
+            sections.map((section, i) => {
+              if (i === 0) return null;
+              else return (
+                <a key={i}
+                   className="relative border overflow-hidden first:rounded-t-lg last:rounded-b-lg"
+                   onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
+                >
+                  <img src={sectionImages[i]} alt={`${section} img`} className={`
+                    aspect-3/1 object-cover object-top ${activeIndex === i ? "" : "grayscale-50"} transition-[filter] duration-150
+                  `}/>
+                  <div className={`
+                    absolute top-0 left-0 size-full transition-colors duration-150
+                    ${activeIndex === i ? "" : "bg-black/45"}
+                  `}></div>
+                  <span className="absolute top-1/2 left-1/2 -translate-1/2 px-4 py-1 bg-black/80 rounded-full font-body">
+                    {section.toUpperCase()}
+                  </span>
+                </a>
+              )
+            })
+          }
         </nav>
       </div>
     </>
