@@ -22,7 +22,7 @@ export default function Projects({ ref }) {
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
         <Project imgSrc={directClothingImg} hoverImgSrc={hoverDirectClothingImg}
                  githubLink="https://github.com/gabbrealz/Direct-Clothing"
-                 className="w-[300px] sm:w-[45%]
+                 className="w-[300px] sm:w-[48%]
         ">
           <>Direct Clothing</>
           <>
@@ -38,7 +38,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={pharmaSearchImg} hoverImgSrc={hoverPharmaSearchImg}
                  githubLink="https://github.com/gabbrealz/Pharma-Search"
-                 className="w-[300px] sm:w-[45%]
+                 className="w-[300px] sm:w-[48%]
         ">
           <>PharmaSearch</>
           <>
@@ -53,7 +53,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={urlScannerImg} hoverImgSrc={hoverURLScannerImg}
                  githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner"
-                 className="w-[300px] sm:w-[45%]
+                 className="w-[300px] sm:w-[48%]
         ">
           <>Malicious URL Scanner</>
           <>
@@ -68,7 +68,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={logicSolverImg} hoverImgSrc={hoverLogicSolverImg}
                  githubLink="https://github.com/gabbrealz/Logic-Solver"
-                 className="w-[300px] sm:w-[45%]
+                 className="w-[300px] sm:w-[48%]
         ">
           <>Logic Solver</>
           <>
