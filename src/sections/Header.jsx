@@ -77,7 +77,7 @@ export default function Header({ sectionRefs }) {
         </button>
       </header>
       <div className={`
-        fixed w-screen h-screen bg-black/75 md:hidden transition-opacity duration-150
+        fixed w-screen h-screen bg-black/70 md:hidden transition-opacity duration-150
         ${show ? "z-40" : "-z-10 opacity-0"}
       `}>
         <nav className="mx-auto w-3/5 h-full flex flex-col justify-center gap-1.5">
@@ -94,7 +94,7 @@ export default function Header({ sectionRefs }) {
                   `}/>
                   <div className={`
                     absolute top-0 left-0 size-full transition-colors duration-150
-                    ${activeIndex === i ? "" : "bg-black/45"}
+                    ${activeIndex === i ? "" : "bg-black/75"}
                   `}></div>
                   <span className="absolute top-1/2 left-1/2 -translate-1/2 px-4 py-1 bg-black/80 rounded-full font-body">
                     {section.toUpperCase()}
