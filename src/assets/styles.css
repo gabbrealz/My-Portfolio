@@ -14,6 +14,37 @@
 
   --font-heading: "Lexend", sans-serif;
   --font-body: "Gowun Dodum", sans-serif;
+
+  --animate-entry-opacity: entryOpacity 0.5s ease-out backwards paused;
+  --animate-entry-slideup: entrySlideUp 0.5s ease-out backwards paused;
+  --animate-entry-slidedown: entrySlideDown 0.5s ease-out backwards paused;
+  --animate-entry-slideleft: entrySlideLeft 0.5s ease-out backwards paused;
+  --animate-entry-slideright: entrySlideRight 0.5s ease-out backwards paused;
+
+  @keyframes entryOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes entrySlideUp {
+    from { opacity: 0; transform: translateY(25%); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes entrySlideDown {
+    from { opacity: 0; transform: translateY(-25%); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes entrySlideLeft {
+    from { opacity: 0; transform: translateX(25%); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes entrySlideRight {
+    from { opacity: 0; transform: translateX(-25%); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+}
+
+@utility animate-play {
+  animation-play-state: running;
 }
 
 @layer base {
