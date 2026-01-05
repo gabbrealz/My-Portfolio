@@ -10,7 +10,7 @@ export default function SectionHeading({ className, children }) {
       </h2>
       {
         subtitle === undefined ? null :
-          <p className="font-body text-highlight-1/80 text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="font-body text-highlight-1/80 text-xs sm:text-sm md:text-base lg:text-lg">
             {subtitle}
           </p>
       }

@@ -22,8 +22,7 @@ export default function Projects({ ref }) {
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
         <Project imgSrc={directClothingImg} hoverImgSrc={hoverDirectClothingImg}
                  githubLink="https://github.com/gabbrealz/Direct-Clothing"
-                 className="w-[300px] sm:w-[48%]
-        ">
+                 className="w-[300px] sm:w-[48%]">
           <>Direct Clothing</>
           <>
             A Spring Boot web application using the mock brand, Direct Clothing.
@@ -38,8 +37,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={pharmaSearchImg} hoverImgSrc={hoverPharmaSearchImg}
                  githubLink="https://github.com/gabbrealz/Pharma-Search"
-                 className="w-[300px] sm:w-[48%]
-        ">
+                 className="w-[300px] sm:w-[48%]">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -53,8 +51,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={urlScannerImg} hoverImgSrc={hoverURLScannerImg}
                  githubLink="https://github.com/gabbrealz/Malicious-URL-Scanner"
-                 className="w-[300px] sm:w-[48%]
-        ">
+                 className="w-[300px] sm:w-[48%]">
           <>Malicious URL Scanner</>
           <>
             The project uses two Python programs, client and server, featuring
@@ -68,8 +65,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={logicSolverImg} hoverImgSrc={hoverLogicSolverImg}
                  githubLink="https://github.com/gabbrealz/Logic-Solver"
-                 className="w-[300px] sm:w-[48%]
-        ">
+                 className="w-[300px] sm:w-[48%]">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate
@@ -102,12 +98,12 @@ function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://gi
       </div>
       <a href={`${githubLink}`} target="_blank" className="group grow p-2 flex flex-col md:p-3 lg:p-4">
         <div className="mb-1 flex justify-center items-center gap-2 md:mb-1.25 lg:mb-1.5">
-          <h3 className="w-fit font-heading text-highlight-1 group-hover:text-highlight-2 transition-color duration-150 text-md md:text-lg lg:text-xl">
+          <h3 className="w-fit font-heading text-highlight-1 group-hover:text-highlight-2 transition-color duration-150 text-base md:text-lg lg:text-xl">
             {name}
           </h3>
           <ArrowRight className="float-right size-5 origin-center -rotate-45 fill-highlight-1 group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-transform transition-colors duration-150" />
         </div>
-        <div className="mb-3 text-xs font-body sm:mb-4 sm:text-sm md:text-md">
+        <div className="mb-3 text-xs font-body sm:mb-4 md:text-sm">
           {description}
         </div>
         <div className="mt-auto flex flex-wrap gap-0.75 md:gap-1">

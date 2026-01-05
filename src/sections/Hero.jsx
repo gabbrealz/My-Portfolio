@@ -19,7 +19,7 @@ export default function Hero({ ref }) {
           xl:pl-32
         ">
           <h1 className="z-10 font-heading text-center leading-[1.3] lg:text-left">
-            <span className="inline-block mb-1 text-highlight-1 text-sm sm:text-md md:text-lg md:mb-2 lg:text-xl">
+            <span className="inline-block mb-1 text-highlight-1 text-sm sm:text-base md:text-lg md:mb-2 lg:text-xl">
               HEY THERE, I'M
             </span><br/>
             <span className="text-highlight-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
@@ -52,7 +52,7 @@ export default function Hero({ ref }) {
               sm:px-4 md:px-5 lg:px-6
             " href="mailto:christianagot11@gmail.com">
               <MailIcon className="size-4 sm:size-4.5" />
-              <span className="select-none text-sm ml-2 sm:ml-2.5 sm:text-md md:text-lg">
+              <span className="select-none text-sm ml-2 sm:ml-2.5 sm:text-base md:text-lg">
                 Get In Touch
               </span>
             </a>

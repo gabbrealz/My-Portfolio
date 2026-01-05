@@ -83,7 +83,7 @@ function Skill({ iconSrc, title, iconClassName = "" }) {
       </div>
       <div className="relative py-0.5">
         <span className="z-0 absolute top-0 left-0 size-full bg-neutral-1/60 origin-top scale-y-8 group-hover:scale-y-100 transition-transform duration-150"></span>
-        <span className="z-10 relative block text-center text-xs font-body sm:text-sm md:text-md">{title}</span>
+        <span className="z-10 relative block text-center text-xs font-body sm:text-sm">{title}</span>
       </div>
     </div>
   );

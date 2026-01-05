@@ -4,7 +4,7 @@ import LinkedInIcon from "../assets/svg/icons/linkedin.svg?react";
 export default function Footer() {
   return (
     <footer className="p-6 h-[15vh] flex justify-around items-center border-t border-neutral-1/60">
-      <span className="font-body text-sm leading-[1.5] text-center md:text-md lg:text-lg">
+      <span className="font-body text-sm leading-[1.5] text-center md:text-base lg:text-lg">
         © 2026 · Christian Agot
       </span>
       <div className="flex justify-center gap-4">

@@ -14,16 +14,16 @@ export default function About({ ref }) {
           ABOUT ME
         </SectionHeading>
         <div className="flex flex-col gap-6 text-shadow-md text-shadow-black">
-          <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
+          <p className="font-body text-sm md:text-base lg:text-lg leading-[1.5]">
             Hello! My name is Christian, and I’m a CS sophomore student at Asia Pacific College.
             I’m an aspiring software engineer with {" "}
             <span className="text-highlight-2">a passion for learning and building projects that help me grow.</span>
           </p>
-          <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
+          <p className="font-body text-sm md:text-base lg:text-lg leading-[1.5]">
             I began my tech journey the summer before college, when I was motivated to learn Python.
             From those times, even building simple projects ignited my curiosity and love for coding!
           </p>
-          <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
+          <p className="font-body text-sm md:text-base lg:text-lg leading-[1.5]">
             Since then, {" "}
             <span className="text-highlight-2">
               I've developed web app back-ends and standalone Python applications {" "}
@@ -31,7 +31,7 @@ export default function About({ ref }) {
             that strengthened my algorithmic thinking.
             Now, I'm exploring frontend frameworks like React, Bootstrap, and Tailwind CSS.
           </p>
-          <p className="font-body text-sm md:text-md lg:text-lg leading-[1.5]">
+          <p className="font-body text-sm md:text-base lg:text-lg leading-[1.5]">
             When I’m not building projects, {" "}
             <span className="text-highlight-2">
               you’ll find me learning new technologies, {" "}
