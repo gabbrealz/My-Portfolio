@@ -44,8 +44,9 @@ export default function Header({ sectionRefs }) {
 
   return (
     <>
-      <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
-        <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap hover:text-highlight-1 transition-[color] duration-150
+      <header className="animate-entry-slidedown [animation-delay:1.5s] z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
+        <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap
+                      hover:text-highlight-1 transition-[color] duration-150
                       sm:text-base md:text-lg lg:border-2"
            onClick={() => { sectionRefs.current[0].scrollIntoView({ behavior: "smooth", block: "center" }) }}
         >
@@ -65,7 +66,8 @@ export default function Header({ sectionRefs }) {
             sections.map((section, i) => {
               if (i === 0) return null;
               else return (
-                <a key={i} className="relative z-10 px-4 font-body cursor-pointer select-none"
+                <a key={i} className="relative z-10 px-4 font-body cursor-pointer select-none animate-entry-slidedown"
+                   style={{ animationDelay: `${1.6 + i * 0.15}s` }}
                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                    onMouseEnter={() => { setHoverIndex(i); }}>
                   {section}
