@@ -16,20 +16,25 @@ export default function App() {
   };
 
   useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0,0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting)
+          if (entry.isIntersecting) {
             entry.target.classList.add("animate-play");
-          else
-            entry.target.classList.remove("animate-play");
+            observer.unobserve(entry.target);
+          }
         })
       }, { threshold: 0.15 }
     )
     document.querySelectorAll('[class*="animate-entry-"]').forEach(el => observer.observe(el));
 
     return () => observer.disconnect();
-  }, [])
+  }, []);
 
   return (
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
