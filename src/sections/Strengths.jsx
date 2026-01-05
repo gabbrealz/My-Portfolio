@@ -12,7 +12,7 @@ export default function Strengths({ ref }) {
         <>WHAT I'M GOOD AT</>
         <>These are my strengths in software development.</>
       </SectionHeading>
-      <div className="flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-4">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-2 md:gap-3 lg:gap-4">
         <Strength bgImgSrc={codeImgSrc} hoverDirection="left">
           <>BACKEND DEVELOPMENT</>
           <>
@@ -37,19 +37,19 @@ function Strength({ bgImgSrc, hoverDirection, children }) {
 
   return (
     <Container className={`
-      group rounded-none transition-transform duration-150 md:w-[49%]
+      group rounded-none transition-transform duration-150 sm:w-[49%]
       ${
         hoverDirection === "right" ? "hover:translate-x-2" :
         hoverDirection === "up" ? "hover:-translate-y-2" :
         hoverDirection === "down" ? "hover:translate-y-2" : "hover:-translate-x-2"
       }
     `}>
-      <img src={bgImgSrc} alt={`${title}`} className="aspect-5/3 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150"/>
-      <div className="h-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 sm:p-24 md:gap-4 md:p-4 lg:gap-6 lg:p-12">
-        <h3 className="font-heading text-center text-highlight-2 text-shadow-lg text-shadow-black text-sm sm:text-lg md:text-base lg:text-xl">
+      <img src={bgImgSrc} alt={`${title}`} className="aspect-2/1 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150 sm:aspect-square md:aspect-5/3"/>
+      <div className="size-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 md:gap-4 lg:gap-6 lg:p-12">
+        <h3 className="font-heading text-center text-highlight-2 text-shadow-lg text-shadow-black max-w-[300px] text-sm sm:text-base lg:text-xl lg:max-w-[360px] xl:max-w-[400px]">
           {title}
         </h3>
-        <p className="font-body text-center text-shadow-lg text-shadow-black text-xs sm:text-sm lg:text-base xl:text-lg xl:leading-[2]">
+        <p className="font-body text-center text-shadow-lg text-shadow-black max-w-[300px] text-xs sm:text-sm lg:text-base lg:max-w-[360px] xl:text-lg xl:leading-[2] xl:max-w-[400px]">
           {description}
         </p>
       </div>
