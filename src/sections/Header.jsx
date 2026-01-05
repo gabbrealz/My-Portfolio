@@ -45,7 +45,8 @@ export default function Header({ sectionRefs }) {
   return (
     <>
       <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
-        <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2"
+        <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap hover:text-highlight-1 transition-[color] duration-150
+                      sm:text-md md:text-lg lg:border-2"
            onClick={() => { sectionRefs.current[0].scrollIntoView({ behavior: "smooth", block: "center" }) }}
         >
           AGOT_
