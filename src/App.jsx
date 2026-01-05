@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import ClickSpark from './components/ClickSpark.jsx';
 import Header from './sections/Header.jsx';
 import Hero from './sections/Hero.jsx';
@@ -14,6 +14,22 @@ export default function App() {
   const addToRefs = (el) => {
     if (el && !sectionRefs.current.includes(el)) sectionRefs.current.push(el);
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting)
+            entry.target.classList.add("animate-play");
+          else
+            entry.target.classList.remove("animate-play");
+        })
+      }, { threshold: 0.15 }
+    )
+    document.querySelectorAll('[class*="animate-entry-"]').forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, [])
 
   return (
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
