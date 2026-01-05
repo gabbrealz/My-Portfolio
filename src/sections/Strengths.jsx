@@ -13,14 +13,14 @@ export default function Strengths({ ref }) {
         <>These are my strengths in software development.</>
       </SectionHeading>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-2 md:gap-3 lg:gap-4">
-        <Strength bgImgSrc={codeImgSrc} hoverDirection="left">
+        <Strength bgImgSrc={codeImgSrc} hoverDirection="left" className="animate-entry-slideright">
           <>BACKEND DEVELOPMENT</>
           <>
             I enjoy building robust backend systems using clean, maintainable code.
             I also have a strong foundation in algorithmic thinking!
           </>
         </Strength>
-        <Strength bgImgSrc={planImgSrc} hoverDirection="right">
+        <Strength bgImgSrc={planImgSrc} hoverDirection="right" className="animate-entry-slideleft">
           <>ARCHITECTURE PLANNING</>
           <>
             I enjoy breaking down complex systems into manageable components, and structuring
@@ -32,7 +32,7 @@ export default function Strengths({ ref }) {
   );
 }
 
-function Strength({ bgImgSrc, hoverDirection, children }) {
+function Strength({ bgImgSrc, hoverDirection, className, children }) {
   const [title, description] = Children.toArray(children);
 
   return (
@@ -43,6 +43,7 @@ function Strength({ bgImgSrc, hoverDirection, children }) {
         hoverDirection === "up" ? "hover:-translate-y-2" :
         hoverDirection === "down" ? "hover:translate-y-2" : "hover:-translate-x-2"
       }
+      ${className}
     `}>
       <img src={bgImgSrc} alt={`${title}`} className="aspect-2/1 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150 sm:aspect-square md:aspect-5/3"/>
       <div className="size-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 md:gap-4 lg:gap-6 lg:p-12">

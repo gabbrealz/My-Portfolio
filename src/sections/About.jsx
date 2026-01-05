@@ -13,7 +13,7 @@ export default function About({ ref }) {
         <SectionHeading className="mb-4 sm:mb-6">
           ABOUT ME
         </SectionHeading>
-        <div className="flex flex-col gap-6 text-shadow-md text-shadow-black">
+        <div className="animate-entry-slideright flex flex-col gap-6 text-shadow-md text-shadow-black">
           <p className="font-body text-sm md:text-base lg:text-lg leading-[1.5]">
             Hello! My name is Christian, and I’m a CS sophomore student at Asia Pacific College.
             I’m an aspiring software engineer with {" "}
@@ -41,7 +41,7 @@ export default function About({ ref }) {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center [grid-area:image] h-full">
+      <div className="animate-entry-opacity flex justify-center items-center [grid-area:image] h-full">
         <img src={profileImg} alt="Christian Agot"
              className="aspect-video object-cover rounded-md shadow-lg shadow-black sm:h-full sm:rounded-lg"/>
       </div>

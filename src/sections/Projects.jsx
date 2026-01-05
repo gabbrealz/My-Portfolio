@@ -37,7 +37,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={pharmaSearchImg} hoverImgSrc={hoverPharmaSearchImg}
                  githubLink="https://github.com/gabbrealz/Pharma-Search"
-                 className="w-[300px] sm:w-[48%]">
+                 className="w-[300px] sm:w-[48%] sm:[animation-delay:0.15s]">
           <>PharmaSearch</>
           <>
             A full-text search application focusing on over-the-counter and
@@ -65,7 +65,7 @@ export default function Projects({ ref }) {
         </Project>
         <Project imgSrc={logicSolverImg} hoverImgSrc={hoverLogicSolverImg}
                  githubLink="https://github.com/gabbrealz/Logic-Solver"
-                 className="w-[300px] sm:w-[48%]">
+                 className="w-[300px] sm:w-[48%] sm:[animation-delay:0.15s]">
           <>Logic Solver</>
           <>
             A Python program that can solve propositional statements and generate
@@ -88,7 +88,7 @@ function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://gi
   const techStackArray = Children.toArray(techStack.props.children);
 
   return (
-    <Container className={`flex flex-col hover:-translate-y-2 transition-transform ${className}`}>
+    <Container className={`animate-entry-slideup flex flex-col hover:-translate-y-2 transition-transform ${className}`}>
       <div className="relative" onClick={() => setShowHoverImg(!showHoverImg)}>
         <img src={imgSrc} alt={`${name}`} className={`
           absolute top-0 left-0 object-contain rounded-t-lg hover:opacity-0 transition-opacity duration-150 cursor-pointer

@@ -26,7 +26,7 @@ export default function TechSkills({ ref }) {
         <>TECH SKILLS</>
         <>The technologies and tools I've worked with to build my projects.</>
       </SectionHeading>
-      <div className="w-full flex flex-wrap justify-around grow gap-x-2 gap-y-4 md:gap-x-4 lg:gap-6">
+      <div className="animate-entry-slideup w-full flex flex-wrap justify-around grow gap-x-2 gap-y-4 md:gap-x-4 lg:gap-6">
         <BorderTitleContainer className="px-2 py-6 grid grid-cols-3 place-content-around grow hover:-translate-y-2 transition-transform duration-150 gap-1 sm:gap-1.5 md:gap-2 md:px-4">
           <>LANGUAGES</>
           <>
