@@ -45,7 +45,7 @@ export default function Header({ sectionRefs }) {
   return (
     <>
       <header className="z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
-        <a className="select-none font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2"
+        <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap sm:text-md md:text-lg lg:border-2"
            onClick={() => { sectionRefs.current[0].scrollIntoView({ behavior: "smooth", block: "center" }) }}
         >
           AGOT_
@@ -88,11 +88,12 @@ export default function Header({ sectionRefs }) {
               if (i === 0) return null;
               else return (
                 <a key={i}
-                   className="relative border overflow-hidden first:rounded-t-lg last:rounded-b-lg"
+                   className="relative border overflow-hidden first:rounded-t-xl last:rounded-b-xl"
                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                 >
                   <img src={sectionImages[i]} alt={`${section} img`} className={`
-                    aspect-3/1 object-cover object-top ${activeIndex === i ? "" : "grayscale-50"} transition-[filter] duration-150
+                    object-cover object-top transition-all duration-150
+                    ${activeIndex === i ? "aspect-3/1" : "aspect-9/2"}
                   `}/>
                   <div className={`
                     absolute top-0 left-0 size-full transition-colors duration-150
