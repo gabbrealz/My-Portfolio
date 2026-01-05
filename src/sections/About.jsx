@@ -42,7 +42,8 @@ export default function About({ ref }) {
         </div>
       </div>
       <div className="flex justify-center items-center [grid-area:image] h-full">
-        <img src={profileImg} alt="Christian Agot" className="aspect-video object-cover rounded-md shadow-lg shadow-black sm:h-full sm:rounded-lg"/>
+        <img src={profileImg} alt="Christian Agot"
+             className="aspect-video object-cover rounded-md shadow-lg shadow-black sm:h-full sm:rounded-lg"/>
       </div>
     </section>
   );
