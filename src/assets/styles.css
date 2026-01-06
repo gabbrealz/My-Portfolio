@@ -1,3 +1,4 @@
+/* The fonts I used are imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lexend:wght@100..900&display=swap');
 @import "tailwindcss";
 
@@ -15,6 +16,7 @@
   --font-heading: "Lexend", sans-serif;
   --font-body: "Gowun Dodum", sans-serif;
 
+  /* These animations are meant to be played when the element enters the viewport */
   --animate-entry-opacity: entryOpacity 0.5s ease-in-out backwards paused;
   --animate-entry-slideup: entrySlideUp 0.5s cubic-bezier(.19,.55,.11,.93) backwards paused;
   --animate-entry-slidedown: entrySlideDown 0.5s cubic-bezier(.19,.55,.11,.93) backwards paused;
@@ -43,6 +45,7 @@
   }
 }
 
+/* Utility class used to play an animation instead of mutating the DOM */
 @utility animate-play {
   animation-play-state: running;
 }
@@ -54,6 +57,7 @@
     background-size: cover;
   }
   header, footer { @apply bg-linear-to-br from-primary-1/60 to-secondary-2/80 backdrop-blur-md; }
+  /* Default bottom margins for spacing in between sections */
   section { @apply mb-[20vh] sm:mb-[25vh] md:mb-[30vh] lg:mb-[40vh] xl:mb-[45vh]; }
   h1, h2 { @apply font-heading text-highlight-1 text-shadow-md text-shadow-black tracking-wider; }
   img { @apply select-none }

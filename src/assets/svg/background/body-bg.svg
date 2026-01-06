@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="2800" preserveAspectRatio="none" viewBox="0 0 1000 2800">
     <style>
+        /*
+            stroke-dasharray - specifies the dashes and gaps of the path
+            stroke-dashoffset - shifts the dash pattern by an offset along the path, this is the property being animated
+            stroke-linejoin - allows for smooth animation at corners (if any)
+            will-change - tells the browser to optimize the animation
+
+            The animation works by specifying a pattern of dashes, then animating
+            the change in offset of the pattern along the path
+        */
+
         .snake {
             stroke-dasharray: 200 75 400 100 300 125;
             stroke-linecap: round;
