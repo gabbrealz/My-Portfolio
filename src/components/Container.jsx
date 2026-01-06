@@ -1,9 +1,13 @@
 import { Children } from "react";
 
+// This is just a styled component created for consistency and to easily change styling of containers scattered in various sections
 export function Container({ className, children }) {
   return <div className={`bg-neutral-2/60 backdrop-blur-xs border-2 border-neutral-1 rounded-lg hover:bg-neutral-2 transition-colors duration-150 ${className}`}>{children}</div>;
 }
 
+// Similar to the Container component, except it has a title aligned along the border.
+//    The titleAlign prop specifies if the title should be aligned to the left, center, or right of the container.
+//    The titleClassname prop specifies additional utility classes for the title only
 export function BorderTitleContainer({ className, titleAlign = "left", titleClassName, children }) {
   const [ title, content ] = Children.toArray(children);
 
