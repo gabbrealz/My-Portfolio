@@ -18,7 +18,7 @@ export default function Hero({ ref }) {
           lg:mt-0 lg:pl-10 lg:w-[55%]
           xl:pl-32
         ">
-          <h1 className="z-10 animate-entry-slideup [animation-delay:1.8s] font-heading text-center leading-[1.3] md:[animation-delay:2.8s] lg:text-left">
+          <h1 className="z-10 animate-entry-slideup [animation-delay:1.8s] font-heading text-center leading-[1.3] md:[animation-delay:2.4s] lg:text-left">
             <span className="inline-block mb-1 text-highlight-1 text-sm sm:text-base md:text-lg md:mb-2 lg:text-xl">
               HEY THERE, I'M
             </span><br/>
@@ -28,9 +28,9 @@ export default function Hero({ ref }) {
           </h1>
           <span className="
             z-10 mt-4 font-body text-lg text-center leading-[1.3] text-shadow-md text-shadow-black
-            animate-entry-slidedown [animation-delay:2.8s]
+            animate-entry-slidedown [animation-delay:2.6s]
             sm:text-xl sm:mt-6 md:text-2xl
-            md:[animation-delay:4s]
+            md:[animation-delay:3.33s]
             lg:text-left lg:leading-[1.5]
             xl:text-3xl
           ">
@@ -52,7 +52,7 @@ export default function Hero({ ref }) {
             <a className="
               group z-10 animate-entry-slideup [animation-delay:2s] px-3 border-2 border-white/40 rounded-full font-body flex justify-center items-center
               hover:border-white hover:bg-neutral-1/25 transition-colors duration-150
-              sm:px-4 md:px-5 md:[animation-delay:3.15s] lg:px-6"
+              sm:px-4 md:px-5 md:[animation-delay:2.6s] lg:px-6"
               href="mailto:christianagot11@gmail.com"
             >
               <MailIcon className="size-4 sm:size-4.5" />
@@ -60,13 +60,13 @@ export default function Hero({ ref }) {
                 Get In Touch
               </span>
             </a>
-            <span className="hidden animate-entry-slideup [animation-delay:2.15s] w-0.25 bg-white rounded-full sm:inline-block md:[animation-delay:3.3s]"></span>
+            <span className="hidden animate-entry-slideup [animation-delay:2.15s] w-0.25 bg-white rounded-full sm:inline-block md:[animation-delay:2.75s]"></span>
             <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
               <a className="
                 z-10 p-2.5 bg-gray-800 rounded-xl animate-entry-slideup [animation-delay:2.15s]
                 hover:scale-110 transition-transform duration-150
                 sm:[animation-delay:2.35s]
-                md:p-3 md:[animation-delay:3.45s]"
+                md:p-3 md:[animation-delay:2.8s]"
                 href="https://github.com/gabbrealz" target="_blank"
               >
                 <GitHubIcon className="size-5 sm:size-6 lg:size-7" />
@@ -75,7 +75,7 @@ export default function Hero({ ref }) {
                 z-10 p-2.5 bg-blue-500 rounded-xl animate-entry-slideup [animation-delay:2.2s]
                 hover:scale-110 transition-transform duration-150
                 sm:[animation-delay:2.4s]
-                md:p-3 md:[animation-delay:3.6s]"
+                md:p-3 md:[animation-delay:2.95s]"
                 href="https://www.linkedin.com/in/christian-gabriel-agot" target="_blank"
               >
                 <LinkedInIcon className="size-5 sm:size-6 lg:size-7" />

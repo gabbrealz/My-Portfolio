@@ -67,7 +67,7 @@ export default function Header({ sectionRefs }) {
               if (i === 0) return null;
               else return (
                 <a key={i} className="relative z-10 px-4 font-body cursor-pointer select-none animate-entry-slidedown"
-                   style={{ animationDelay: `${1.6 + i * 0.15}s` }}
+                   style={{ animationDelay: `${1.6 + i * 0.1}s` }}
                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                    onMouseEnter={() => { setHoverIndex(i); }}>
                   {section}
