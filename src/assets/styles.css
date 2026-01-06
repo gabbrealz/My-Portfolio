@@ -52,10 +52,6 @@
 
 @layer base {
   * { @apply text-white selection:bg-highlight-1 selection:text-black; }
-  body {
-    background: url('svg/background/body-bg.svg') no-repeat center center;
-    background-size: cover;
-  }
   header, footer { @apply bg-linear-to-br from-primary-1/60 to-secondary-2/80 backdrop-blur-md; }
   /* Default bottom margins for spacing in between sections */
   section { @apply mb-[20vh] sm:mb-[25vh] md:mb-[30vh] lg:mb-[40vh] xl:mb-[45vh]; }

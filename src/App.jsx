@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import BackgroundSVG from './assets/svg/background/body-bg.svg?react'
 import ClickSpark from './components/ClickSpark.jsx';
 import Header from './sections/Header.jsx';
 import Hero from './sections/Hero.jsx';
@@ -38,13 +39,13 @@ export default function App() {
 
     // Upon page load, automatically scroll to the top of the page (prevents scroll position from being retained across refreshes)
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "hidden";
     window.scrollTo(0,0);
 
     // Wait for the intro animations to finish, then remove the introduction div and allow user to scroll
     setTimeout(() => {
       introRef.current.style.opacity = 0;
-      document.body.style.overflow = "visible";
+      document.body.style.overflowY = "visible";
       setTimeout(() => introRef.current.remove(), 500);
     }, (window.innerWidth < 640 ? 3000 : 3500));
 
@@ -55,6 +56,8 @@ export default function App() {
   return (
     // Disclaimer: the ClickSpark element was taken from reactbits.dev
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
+      {/* This is the animated background */}
+      <BackgroundSVG className="-z-5 absolute top-0 left-0 size-full" />
       <div ref={introRef} className="-z-1 fixed size-full bg-radial from-primary-1 to-secondary-2 transition-opacity duration-500"></div>
 
       {/* Pass sectionRefs to the header to be used by nav links, then add each section to sectionRefs via addToRefs function */}
