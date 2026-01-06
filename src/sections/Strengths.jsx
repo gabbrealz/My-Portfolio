@@ -45,7 +45,7 @@ function Strength({ bgImgSrc, hoverDirection, className, children }) {
       }
       ${className}
     `}>
-      <img src={bgImgSrc} alt={`${title}`} className="aspect-2/1 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150 sm:aspect-square md:aspect-5/3"/>
+      <img src={bgImgSrc} alt={`${title}`} className="aspect-2/1 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150 sm:aspect-square md:aspect-5/4 lg:aspect-5/3"/>
       <div className="size-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 md:gap-4 lg:gap-6 lg:p-12">
         <h3 className="font-heading text-center text-highlight-2 text-shadow-lg text-shadow-black max-w-[300px] text-sm sm:text-base lg:text-xl lg:max-w-[360px] xl:max-w-[400px]">
           {title}
