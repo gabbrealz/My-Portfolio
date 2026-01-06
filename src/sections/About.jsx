@@ -41,7 +41,7 @@ export default function About({ ref }) {
           </p>
         </div>
       </div>
-      <div className="animate-entry-opacity flex justify-center items-center [grid-area:image] h-full">
+      <div className="animate-entry-slideup flex justify-center items-center [grid-area:image] h-full">
         <img src={profileImg} alt="Christian Agot"
              className="aspect-video object-cover rounded-md shadow-lg shadow-black sm:h-full sm:rounded-lg"/>
       </div>
