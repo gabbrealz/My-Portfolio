@@ -91,7 +91,7 @@ export default function Header({ sectionRefs }) {
               if (i === 0) return null;
               else return (
                 <a key={i}
-                   className="relative border overflow-hidden first:rounded-t-xl last:rounded-b-xl"
+                   className="relative border overflow-hidden first:rounded-t-lg last:rounded-b-lg"
                    onClick={() => { sectionRefs.current[i].scrollIntoView({ behavior: "smooth", block: "center" }) }}
                 >
                   <img src={sectionImages[i]} alt={`${section} img`} className={`

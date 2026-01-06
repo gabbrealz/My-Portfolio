@@ -51,7 +51,7 @@ export default function Hero({ ref }) {
           ">
             <a className="
               group z-10 animate-entry-slideup [animation-delay:2s] px-3 border-2 border-white/40 rounded-full font-body flex justify-center items-center
-              hover:border-white hover:bg-neutral-1/25 transition-colors duration-150
+              hover:border-white hover:bg-neutral-1/15 transition-colors duration-150
               sm:px-4 md:px-5 md:[animation-delay:2.6s] lg:px-6"
               href="mailto:christianagot11@gmail.com"
             >
