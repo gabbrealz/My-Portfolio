@@ -60,7 +60,7 @@ export default function Hero({ ref }) {
                 Get In Touch
               </span>
             </a>
-            <span className="hidden animate-entry-slideup [animation-delay:2.15s] w-0.25 bg-white rounded-full sm:inline-block md:[animation-delay:2.75s]"></span>
+            <span className="hidden animate-entry-slideup [animation-delay:2.15s] w-0.25 bg-white rounded-full sm:inline-block sm:[animation-delay:2.75s]"></span>
             <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5">
               <a className="
                 z-10 p-2.5 bg-gray-800 rounded-xl animate-entry-slideup [animation-delay:2.15s]

@@ -44,7 +44,7 @@ export default function Header({ sectionRefs }) {
 
   return (
     <>
-      <header className="animate-entry-slidedown [animation-delay:1.5s] z-50 fixed top-0 left-0 w-full h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
+      <header className="animate-entry-slidedown [animation-delay:1.5s] z-50 fixed top-0 left-0 w-screen h-14 px-[7.5%] flex justify-between items-center transition-transform duration-160 md:h-16">
         <a className="cursor-pointer select-none font-body text-sm px-1.5 border whitespace-nowrap
                       hover:text-highlight-1 transition-[color] duration-150
                       sm:text-base md:text-lg lg:border-2"

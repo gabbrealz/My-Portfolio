@@ -15,9 +15,19 @@ export default function App() {
     if (el && !sectionRefs.current.includes(el)) sectionRefs.current.push(el);
   };
 
+  const introRef = useRef(null);
+
   useEffect(() => {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    document.body.style.overflow = "hidden";
     window.scrollTo(0,0);
+
+    setTimeout(() => {
+      introRef.current.style.opacity = 0;
+      document.body.style.overflow = "visible";
+      setTimeout(() => introRef.current.remove(), 500);
+    }, (window.innerWidth < 640 ? 3000 : 3500));
+
   }, []);
 
   useEffect(() => {
@@ -38,6 +48,8 @@ export default function App() {
 
   return (
     <ClickSpark sparkSize={8} sparkRadius={35} duration={400}>
+      <div ref={introRef} className="-z-1 fixed size-full bg-radial from-primary-1 to-secondary-2 transition-opacity duration-500"></div>
+
       <Header sectionRefs={sectionRefs} />
       <Hero ref={addToRefs} />
       <div className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-56">
