@@ -82,14 +82,25 @@ export default function Projects({ ref }) {
   );
 }
 
-function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://github.com/gabbrealz", children }) {
-  const [showHoverImg, setShowHoverImg] = useState(false);
+// This component uses the following props:
+//    imgSrc - the default image shown in the card
+//    hoverImgSrc - the image shown when the user clicks/hovers the image
+//    githubLink - the GitHub link to the project being referenced in the card
+//    className - any utility classes that should be added to the project card
+//    children - this component expects 3 children,
+//                  1. the name of the project
+//                  2. a description of the project
+//                  3. the list of tech used in the project (each tech is a nested element/fragment)
+function Project({ imgSrc, hoverImgSrc, githubLink = "https://github.com/gabbrealz", className = "", children }) {
+
+  const [showHoverImg, setShowHoverImg] = useState(false);          // This state is for toggling between the two images
   const [ name, description, techStack ] = Children.toArray(children);
   const techStackArray = Children.toArray(techStack.props.children);
 
   return (
     <Container className={`animate-entry-slideup flex flex-col hover:-translate-y-2 transition-transform ${className}`}>
       <div className="relative" onClick={() => setShowHoverImg(!showHoverImg)}>
+        {/* The toggle happens by adjusting the opacity of the image at the top layer */}
         <img src={imgSrc} alt={`${name}`} className={`
           absolute top-0 left-0 object-contain rounded-t-lg hover:opacity-0 transition-opacity duration-150 cursor-pointer
           ${showHoverImg ? "opacity-0" : ""}
@@ -101,7 +112,10 @@ function Project({ imgSrc, hoverImgSrc, className = "", githubLink = "https://gi
           <h3 className="w-fit font-heading text-highlight-1 group-hover:text-highlight-2 transition-color duration-150 text-base md:text-lg lg:text-xl">
             {name}
           </h3>
-          <ArrowRight className="float-right size-5 origin-center -rotate-45 fill-highlight-1 group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-transform transition-colors duration-150" />
+          <ArrowRight className="
+            float-right size-5 origin-center -rotate-45 fill-highlight-1
+            group-hover:fill-highlight-2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 transition-[fill,translate] duration-150
+          "/>
         </div>
         <div className="mb-3 text-xs font-body sm:mb-4 md:text-sm">
           {description}

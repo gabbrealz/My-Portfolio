@@ -3,6 +3,7 @@ import profileImg from '../assets/images/profile/read.jpg';
 
 export default function About({ ref }) {
   return (
+    // At the sm breakpoint, the section becomes a grid container to force the intended layout
     <section ref={ref} className="
       mt-16 flex flex-col gap-8
       sm:px-0 sm:grid sm:grid-cols-2 sm:[grid-template-areas:'image_content']

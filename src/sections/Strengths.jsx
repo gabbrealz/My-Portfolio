@@ -9,6 +9,7 @@ import coffeeImgSrc from "../assets/images/strengths/coffee.jpg";
 
 export default function Strengths({ ref }) {
   return (
+    // See the Strength component below to see how it works
     <section ref={ref} className="mx-auto">
       <SectionHeading className="mb-8 sm:mb-12 md:mb-16">
         <>WHAT I'M GOOD AT</>
@@ -48,6 +49,11 @@ export default function Strengths({ ref }) {
   );
 }
 
+// This component takes the following props:
+//    bgImgSrc - the image to be used as background in the container
+//    hoverDirection - the direction the container moves when it gets hovered
+//    className - any other utility classes that should be passed to the container
+//    children - this component expects two children, 1st is the title and 2nd is the description
 function Strength({ bgImgSrc, hoverDirection, className, children }) {
   const [title, description] = Children.toArray(children);
 
@@ -61,8 +67,10 @@ function Strength({ bgImgSrc, hoverDirection, className, children }) {
       }
       ${className}
     `}>
+      {/* The img tag contains the aspect-ratio property, which also affects the size of the overall container */}
       <img src={bgImgSrc} alt={`${title}`} className="aspect-5/2 object-cover w-full opacity-20 group-hover:opacity-30 transition-opacity duration-150 sm:aspect-3/2 lg:aspect-2/1"/>
       <div className="size-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 gap-2 md:gap-4 lg:gap-6 lg:p-12">
+        {/* Max-width is set for the h3 and p tag to make the content line break nicely regardless of container size */}
         <h3 className="font-heading text-center text-highlight-2 text-shadow-lg text-shadow-black max-w-[300px] text-xs sm:text-sm md:text-base lg:text-lg lg:max-w-[360px] xl:text-xl xl:max-w-[400px]">
           {title}
         </h3>

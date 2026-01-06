@@ -6,9 +6,12 @@ import LinkedInIcon from "../assets/svg/icons/linkedin.svg?react";
 export default function Hero({ ref }) {
   return (
     <section ref={ref} className="w-full min-h-screen h-auto mb-[5vh] sm:mb-[10vh] md:mb-[15vh] lg:mb-[20vh] lg:h-screen xl:mb-[25vh]">
+      {/* Had to wrap the lanyard around 2 divs to position it where I wanted */}
+      {/* The 1st div sets a vertical offset and hides overflow */}
       <div className="z-1 absolute w-full h-fit overflow-hidden -translate-y-20">
+        {/* The 2nd div sets the horizontal position (by changing the width of the container relative to viewport width) */}
         <div className="h-fit lg:w-[130vw] lg:scale-110">
-          <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
+          <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} /> {/* Disclaimer: the Lanyard component was taken from reactbits.dev */}
         </div>
       </div>
 
